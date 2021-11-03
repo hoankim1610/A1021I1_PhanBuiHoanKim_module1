@@ -1,0 +1,5 @@
+BEGIN
+   INPUT USD
+     VND = USD*23.000 
+   DISPLAY VND
+END
