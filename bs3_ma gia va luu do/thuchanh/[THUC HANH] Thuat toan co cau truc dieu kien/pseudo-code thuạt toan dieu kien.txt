@@ -1,0 +1,14 @@
+BRGIN
+   INPUT diem so
+     IF diem so >=75
+     DISPLAY "loai A"
+     ELSE IF diem >=60
+     DISPLAY "Loai B"
+     ELSE IF diem >45
+     DISPLAY "Loai C"
+     ELSE IF diem >=35
+     DISPLAY "Loai D"
+     ELSE 
+     DISPLAY "Loai E"
+     END IF
+END
