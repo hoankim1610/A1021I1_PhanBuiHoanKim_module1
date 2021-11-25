@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="doReady()">
+<img id="myImage" src="https://james.codegym.vn/pluginfile.php/51884/mod_assign/intro/1.png" style="position: absolute; left: 0; top: 0"/>
+<script>
+    function rightPress() {
+        let nobita = document.getElementById("myImage");
+        nobita.style.left = parseInt(nobita.style.left) + 20 + "px"
+    }
+    function leftPress()  {
+        let nobita = document.getElementById("myImage");
+        nobita.style.left = parseInt(nobita.style.left) - 20 + "px"
+    }
+    function upPress() {
+        let nobita = document.getElementById("myImage");
+        nobita.style.top = parseInt(nobita.style.top) + 20 + "px"
+    }
+    function downPress() {
+        let nobita= document.getElementById("myImage");
+        nobita.style.top = parseInt(nobita.style.top) - 20 + "px"
+    }
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftPress();
+                break;
+            case 38:
+                downPress();
+                break;
+            case 39:
+                rightPress();
+                break;
+            case 40:
+                upPress();
+                break;
+        }
+    }
+    function doReady() {
+    window.addEventListener('keydown', moveSelection);
+
+    }
+
+</script>
+</body>
+</html>

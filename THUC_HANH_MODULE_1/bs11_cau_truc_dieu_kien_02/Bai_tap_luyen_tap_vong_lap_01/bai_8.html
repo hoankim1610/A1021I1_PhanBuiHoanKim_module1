@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Chơi" onclick="play()">
+​
+<script>
+    function play() {
+        let from = parseInt(prompt("Khoảng số bắt đầu từ: "));
+        let to = parseInt(prompt("Khoảng số kết thúc là: "));
+        let numberCom = Math.floor(Math.random() * (to - from + 1) + from);
+        let numberUser;
+        let pass = false;
+
+        for (let i = 0; i < 3 && !pass; i++) {
+            numberUser = parseInt(prompt("Mời bạn nhập số"));
+            if (numberUser === numberCom) {
+                alert("CHiến thắng");
+                pass = true;
+            } else {
+                if (numberUser < numberCom) {
+                    alert("Số bạn đoán bé hơn");
+                } else {
+                    alert("Số bạn đoán lớn hơn");
+                }
+            }
+        }
+
+        if(pass === false) {
+            alert("Thua cuộc");
+        }
+    }
+</script>
+</body>
+</html>
+Collaps

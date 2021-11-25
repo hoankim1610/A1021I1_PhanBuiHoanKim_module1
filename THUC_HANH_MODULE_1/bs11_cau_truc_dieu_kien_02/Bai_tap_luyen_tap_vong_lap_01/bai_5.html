@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = 0;
+    let y = 1;
+    let z;
+    let sum = 0;
+    document.write(x + '<br>');
+    document.write(y + "<br>");
+    for (i = 1; i<=18; i++) {
+        z = x + y;
+        x = y;
+        y = z;
+        document.write(z + '<br>');
+        sum = sum + z;
+    }
+    document.write("Sum: = " + sum);
+</script>
+</body>
+</html>

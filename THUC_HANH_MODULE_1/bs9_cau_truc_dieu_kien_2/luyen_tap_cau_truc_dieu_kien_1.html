@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // bai1
+    let a = parseInt(prompt('Nhap a'))
+    let b = parseInt(prompt('Nhap b'))
+    if (a % b == 0 ) {
+        alert("a chia het cho b")
+    } else {
+        alert("a khong chia het cho b")
+    }
+    // bai2
+    let age = parseInt(prompt('Nhap tuoi'))
+    if (age >= 15){
+        alert('du tuoi vao lop 10')
+    }else{
+        alert('khong du tuoi vao lop 10')
+    }
+    // bai3
+    let x = parseInt(prompt('Nhap so nguyen'))
+    if (x > 0) {
+        alert('nguyen duong')
+    }else {
+        alert('nguyen am')
+    }
+    // bai4
+    let a = parseInt(prompt('Nhap a'))
+    let b = parseInt(prompt('Nhap b'))
+    let c = parseInt(prompt('Nhap c'))
+    if (a>b && a>c){
+        alert('a lon nhat')
+    }else if (b>c){
+        alert('b lon nhat')
+    }else{
+        alert('c lon nhat')
+    }
+    // bai5
+    let a = parseInt(prompt("Nhap diem bai kiem tra"));
+    let b = parseInt(prompt('Nhap diem giua ky'));
+    let c = parseInt(prompt('Nhap diem cuoi ky'));
+    let total;
+    total = (a + b*2 + c*3)/6;
+    alert(total);
+    // bai6
+    let x = prompt("Muc doanh so ban hang")
+    if (x > 50 && x < 80){
+        alert("Thuong 20%")
+    }
+    if (x>80) {
+        alert("Thuong 50%")
+    }else{
+        alert("")
+    }
+    //bai7
+    let x = minute;
+    let y = phi co dinh;
+    let tong;
+    if (x < 50) {
+        tong = y + y * 20/100;
+    } else if (x <70){
+        tong = y + y * 50/100;
+    } else {
+        alert('den tan noi bao gia')
+    }
+alert(tong);
+</script>
+</body>
+</html>
