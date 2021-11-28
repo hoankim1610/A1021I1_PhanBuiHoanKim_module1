@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [[1,2,3,4], [7,8,9,10,15,16,17], [11,12,13,14]];
+
+    for (let i in array) {
+        document.write("row" + " " + i);
+        document.write( " <br> ");
+
+        for (let j in array[i]) {
+            document.write(" " + array[i][j]);
+            document.write( " <br> ");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = new Array(10);
+    let medium = 0;
+    for (let i = 0; i < array.length; i ++) {
+        let num = parseInt(prompt('Nhap so nguyen tai index = ' + i));
+        array[i] = num;
+        medium = medium + num;
+    }
+    document.write('Gia tri trung binh cua mang la' + medium/10);
+    document.write('<br>');
+    let max = Math.max.apply(Math, array);
+    document.write('Gia tri lon nhat cua mang la' + " " + max );
+</script>
+</body>
+</html>

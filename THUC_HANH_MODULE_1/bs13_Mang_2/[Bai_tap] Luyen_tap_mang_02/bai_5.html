@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1 = new Array(5);
+    for (let i = 0; i < array1.length; i ++ ) {
+        let value1 = prompt('Nhap vao chuoi thu 2');
+        array1[i]= value1;
+        document.write(value1 + ' ');
+    }
+    document.write('<br>')
+    let array2 = new Array(5);
+    for (let j = 0; j < array2.length; j ++ ) {
+        let value2 = prompt('Nhap vao chuoi thu 2');
+        array2[j]= value2;
+        document.write(value2 + ' ');
+    }
+    document.write('<br>')
+    if (array1 == array2) {
+        document.write('Chuoi 1 bang chuoi 2');
+    } else {
+        document.write('Chuoi 1 khong bang chuoi 2')
+    }
+</script>
+</body>
+</html>

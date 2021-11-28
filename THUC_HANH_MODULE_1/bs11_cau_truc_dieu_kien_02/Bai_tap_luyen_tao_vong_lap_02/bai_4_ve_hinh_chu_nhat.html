@@ -6,15 +6,24 @@
 </head>
 <body>
 <script>
-    let a = 21;
+    let a = 20;
     let b = 7;
-    for (i = 1; i<= b; i++) {
-        for (j = 1; j <= a; j++) {
-            document.write("*")
+    for ( let i = 0; i<= b; i++) {
+        if (i == 0 || i == 7) {
+            for (let j = 0; j <= a; j++) {
+                document.write("*")
+            }
+        } else {
+            for (let j = 0; j<=a; j++){
+                if (j == 0 || j == 20) {
+                    document.write("*")
+                }else {
+                    document.write('&ensp;')
+                }
+            }
         }
-        document.write("<br>")
+        document.write('<br>');
     }
-// document.write("&esnp;")
 
 </script>
 </body>

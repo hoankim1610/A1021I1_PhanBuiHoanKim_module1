@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bai1
+    let array = ["Red", "Green", "White", "Black"];
+    document.write(array.toString());
+    bai2
+    const num=window.prompt();
+    const str = num.toString();
+    const result = [str[0]];
+
+    for(let x=1; x<str.length; x++)
+    {
+        if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+        {
+            result.push('-', str[x]);
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+// bai3
+    let str = 'c';
+    let UPPER = 'The Quick Brown Fox';
+    let LOWER = 'the quick brown fox';
+    let result = [];
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>

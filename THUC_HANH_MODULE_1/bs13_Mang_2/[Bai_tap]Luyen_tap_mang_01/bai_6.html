@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let array = new Array(10);
+   for(let index = 0; index <  array.length; index++) {
+   let number = parseInt(prompt("moi ban nhap so nguyen tai index = " + index));
+       array[index] = number;
+       document.write(number + " ");
+   }
+
+   let v = parseInt(prompt("moi ban nhap so nguyen V "));
+
+   let indexV = array.indexOf(v);
+
+   if(indexV == -1){
+   alert(" V is not in the array");
+   } else {
+       alert(" V is in the array")
+   }
+
+</script>
+
+</body>
+</html>
