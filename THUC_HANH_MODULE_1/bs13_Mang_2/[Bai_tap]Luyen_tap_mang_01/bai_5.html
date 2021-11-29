@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
-    const findVowels = str => {
-        let count = 0
-        const vowels = ['a', 'o', 'e', 'u', 'i']
-        for (let char = str.length - 1; i >= 0; i--) {
-            if (vowels.includes(char.toLowerCase())) {
-                count++
-            }
-        }
-        return count
-    }
+   function countVowels(str) {
+       let count = 0;
+       let string = str.toString();
+       for (let i = 0; i <= string.length - 1; i++){
+           if (string.charAt(i) == "a" || string.charAt(i) == "e" || string.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u")
+           count ++;
+       }
+       return count;
+   }
+   console.log(countVowels(prompt("Enter your string").toLowerCase()));
 </script>
 </body>
 </html>
