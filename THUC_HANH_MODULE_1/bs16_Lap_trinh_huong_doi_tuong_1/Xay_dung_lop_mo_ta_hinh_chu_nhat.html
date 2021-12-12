@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+        getLength() {
+            return this.length;
+        }
+        getWidth() {
+            return this.width;
+        }
+        getPerimeter() {
+            return this.width * this.length;
+        }
+        getArea() {
+            return (this.length + this.width) * 2;
+        }
+        setLength(length) {
+            this.length = length;
+        }
+        setWidth(width) {
+            this.width = width;
+        }
+        setPerimeter() {
+            return this.width * this.length;
+        }
+        setArea() {
+            return (this.length + this.width) * 2;
+        }
+    }
+
+    let rectangle = new Rectangle(3, 4);
+    let length = rectangle.getLength();
+    let width = rectangle.getWidth();
+    let perimeter = rectangle.getPerimeter();
+    let area = rectangle.getArea();
+    console.log("length =" + length + "width =" + width + "; perimeter = " + perimeter + "; area =" + area);
+
+    rectangle.setLength(4);
+    rectangle.setWidth(5);
+    rectangle.setArea();
+    rectangle.setPerimeter();
+
+    let length2 = rectangle.getLength();
+    let width2 = rectangle.getWidth();
+    let perimeter2 = rectangle.getPerimeter();
+    let area2 = rectangle.getArea();
+    console.log ("length =" + length2 + "width =" + width2 + "; perimeter = " + perimeter2 + "; area =" + area2);
+</script>
+</body>
+</html>
