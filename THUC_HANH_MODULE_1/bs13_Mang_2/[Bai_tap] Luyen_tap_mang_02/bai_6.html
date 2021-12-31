@@ -7,14 +7,34 @@
 <body>
 
 <script>
-let array = new Array(10);
+let array = new Array(5);
 for (let i = 0; i < array.length; i ++) {
-    let num = parseInt(prompt('Nhap so nguyen tai index = ' + i));
+    let num = prompt('Nhap so nguyen tai index = ' + i);
     array[i] = num;
+    document.write(num + " ");
+    for(let j = 0; j < num.length; j++) {
+        if (num == "-") {
+            let result = num.splice(num[j], 0, "_");
+            console.log(result);
+        }
+    }
 }
-if (array[i] = "-") {
-    document.write(array.splice(array[i]))
-}
+
+
+// while (true){
+//         let i = 1;
+//         document.write(i + "<br>");
+//         let a = prompt("Nhap mot so:");
+//         if(a == 0){
+//             break;
+//         }
+//     } // => 1
+
+// let i = 1;
+// do {
+//     document.write(i + "<br>"); //1 2 3 .. 10
+//     i++;
+// } while (i <= 10);
 
 </script>
 </body>

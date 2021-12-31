@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhap vao mot chuoi")
+    function dem(str) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === str[i].toUpperCase()) {
+                count++;
+            }
+        }
+        return count;
+    }
+    alert("So chu hoa trong chuoi la" + dem(str))
+</script>
+</body>
+</html>

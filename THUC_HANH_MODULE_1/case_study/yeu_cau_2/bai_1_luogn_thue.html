@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = parseInt(prompt("Nhap luong nhan vien (trieu)"));
+    let thue = 0;
+    let salary = 0;
+    if (input == 15) {
+        thue = input*20/100;
+        salary = input - thue;
+    } else if (input >= 7 && input <=15) {
+        thue = input*10/100;
+        salary = input - thue;
+    } else if (input < 7){
+        thue = input*5/100
+        salary = input - thue;
+    }
+    alert(thue);
+    alert(salary);
+</script>
+</body>
+</html>

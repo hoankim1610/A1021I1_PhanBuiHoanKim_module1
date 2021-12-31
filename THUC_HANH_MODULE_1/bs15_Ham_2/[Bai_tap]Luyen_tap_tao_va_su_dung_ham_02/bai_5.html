@@ -8,8 +8,8 @@
 <script>
     let array = new Array(3);
     for (let j = 0; j < array.length; j ++ ) {
-        let num = parseInt(prompt('Nhap vao 3 so'))
-        array[j] = num
+        let num = parseInt(prompt('Nhap vao so tai index =' + j));
+        array[j] = num;
     }
 
     function checkMin(arr) {
@@ -21,8 +21,8 @@
         }
         return min;
     }
-    let min = checkMin(array);
-    alert(min);
+    alert(checkMin(array));
+    // alert(min);
 </script>
 </body>
 </html>

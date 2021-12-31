@@ -7,21 +7,24 @@
 <body>
 <script>
     let array = new Array(10);
-    let number = parseInt(prompt("Enter the number!"));
+    for (let i = 0; i < array.length; i++) {
+        let number = parseInt(prompt("Enter the number!"));
+        array[i] = number;
+        console.log(number + ' ')
+    }
     function isPrime(arr) {
-        let index = true;
-        if (arr < 2) {
-            index = false;
-        } else {
-            for (let i = 2; i < arr.length; i++){
-                if (n % i == 0){
-                    index = false;
-                    break;
-                }
+        for (let i = 0; i < arr.length; i++){
+            // let index = true;
+            if (arr[i] < 2) {
+            } else if ( arr[i] % i === 0) {
+                    console.log(arr[i] + "la so nguyen to")
+            } else {
+                index = false;
+                return arr[i]
             }
         }
-
     }
+    console.log(isPrime(array));
 </script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function countDifferent(str) {
+        let arr = [];
+        for (let i = 0; i < str.length; i++) {
+            if (arr.indexOf(str.charAt(i)) === -1) {
+                arr.push(str.charAt(i));
+            }
+        }
+        return arr.length;
+    }
+    console.log(countDifferent(prompt(" Nhap mot chuoi")))
+</script>
+</body>
+</html>

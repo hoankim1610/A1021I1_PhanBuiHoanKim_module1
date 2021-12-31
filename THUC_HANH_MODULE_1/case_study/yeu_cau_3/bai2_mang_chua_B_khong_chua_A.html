@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrA = [1, 2, 3, 4];
+    let arrB = [1, 2, 9, 3, 5, 4, 5];
+    let newArr = [];
+    for (let i = 0; i < arrB.length; i++) {
+        if (arrA.indexOf(arrB[i]) === -1 && newArr.indexOf(arrB[i]) === -1) {
+                newArr.push(arrB[i]);
+        }
+    }
+    newArr.sort();
+    console.log("mang chua B khong chua A la : " + newArr);
+</script>
+</body>
+</html>

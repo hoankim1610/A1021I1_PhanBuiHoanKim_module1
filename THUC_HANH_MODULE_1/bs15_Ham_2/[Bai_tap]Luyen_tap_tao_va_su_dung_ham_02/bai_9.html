@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let array = new Array(10);
+    let array = new Array(5);
     for (let i = 0; i < array.length; i++) {
         let number = parseInt(prompt('Nhap vao mot so tai index =' + i));
         array[i] = number;
@@ -14,15 +14,15 @@
     let a = parseInt(prompt('Nhap vao 1 so'));
     function check(arr) {
         for (let i = 0; i < arr.length - 1; i++) {
-            if (a == arr[i]) {
-                console.log(
+            if (a === arr[i]) {
+                console.log(" so " + a + "co trong mang");
+                break;
             } else {
                 console.log('-1');
             }
         }
     }
     check(array);
-check();
 </script>
 </body>
 </html>

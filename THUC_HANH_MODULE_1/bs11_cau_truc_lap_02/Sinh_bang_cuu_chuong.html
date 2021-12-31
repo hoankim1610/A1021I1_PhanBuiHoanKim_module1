@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sout;
+    sout = "<table border='1' width='700' cellpadding='8' cellspacing='0'>"
+    for (let i = 1; i < 10; i++){
+        sout = sout + "<tr>";
+        for (let j = 1; j <= 10; j++){
+            sout = sout + "<td>" + j + "x" + i + "=" + i * j ;
+        }
+    }
+    document.write(sout);
+    document.write("<br>");
+
+
+</script>
+</body>
+</html>

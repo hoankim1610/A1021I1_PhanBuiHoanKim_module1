@@ -5,16 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<script type="text/javascript">
-    function giaithua() {
-        let n = parseInt(prompt(`Enter n`));
+<script>
+    function giaithua(n) {
         let giaithua = 1
         for (let i = 1; i <= n; i++) {
-            giaithua = giaithua * i;
+           giaithua = giaithua * i;
         }
-        alert(`n! = ` + giaithua);
+        alert('n! = ' + giaithua);
     }
-    giaithua();
+    giaithua(parseInt(prompt(`Enter n`)));
+
 
 
 </script>

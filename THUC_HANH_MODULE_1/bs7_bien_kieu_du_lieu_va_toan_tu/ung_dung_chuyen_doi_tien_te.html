@@ -23,33 +23,35 @@
 <br>
 <br>
 <button style="background-color: cornflowerblue" onclick="getResult()">Convert</button>
+<hr>
+<div id="result"></div>
 </form>
 </body>
 <script>
     function getResult() {
         let enter = parseInt(document.getElementById("input").value)
-        let from = parseInt(document.getElementById("select1").value)
-        let to = parseInt(document.getElementById("select2").value)
+        let from = document.getElementById("select1").value;
+        let to = document.getElementById("select2").value;
         if (from == to) {
-            alert(enter);
+            document.getElementById("result").innerText= enter;
         }
         if (from == "1" && to == "2") {
-            alert(enter / 23000);
+            document.getElementById("result").innerText= enter / 23000;
         }
         if (from == "1" && to == "3") {
-            alert(enter / 26000);
+            document.getElementById("result").innerText=enter / 26000;
         }
         if (from == "2" && to == "1") {
-            alert(enter * 23000);
+            document.getElementById("result").innerText= enter * 23000;
         }
         if (from == "2" && to == "3") {
-            alert(enter / 1.15);
+            document.getElementById("result").innerText= enter / 1.15;
         }
         if (from == "3" && to == "1") {
-            alert(enter * 26000);
+            document.getElementById("result").innerText= enter * 26000;
         }
         if (from == "3" && to == "2") {
-            alert(enter * 1.15);
+            document.getElementById("result").innerText= enter * 1.15;
         }
     }
 

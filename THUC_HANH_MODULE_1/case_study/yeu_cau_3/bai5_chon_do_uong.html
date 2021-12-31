@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style=" color: crimson " >
+    MENU
+</h1>
+<p style="color: maroon">
+    1. Vanilla Ice-scream <br>
+    2. Strawberry Juice <br>
+    3. Orange Juice <br>
+    4. Coconut <br>
+    5. Traditional cafe <br>
+    6. Yogurt <br>
+    7. Exit <br>
+</p>
+<input id="chooseNumber" type="text" placeholder="number" style="color: deeppink">
+<input id="howMany" type="text" placeholder="amount" style="color: deeppink">
+<button onclick="totalPrice()" style="background-color: indianred">Oder</button>
+<hr>
+<div id="result"></div>
+<script style="text-align: center">
+    let total = 0;
+    let amount;
+    let price;
+    function totalPrice() {
+        let choose = parseInt(document.getElementById("chooseNumber").value);
+        amount = parseInt(document.getElementById("howMany").value);
+            switch (choose) {
+                case 1:
+                    price = 10.45;
+                    break;
+                case 2:
+                    price = 8.30;
+                    break;
+                case 3:
+                    price = 7.00;
+                    break;
+                case 4:
+                    price = 6.25;
+                    break;
+                case 5:
+                    price = 4.20;
+                    break;
+                case 6:
+                    price = 7.00;
+                    break;
+                case 7:
+                    alert("Choose again, please!")
+            }
+        total = amount * price;
+        document.getElementById("result").innerHTML = "Your bill : " + total + "$";
+    }
+
+
+
+
+</script>
+</body>
+</html>

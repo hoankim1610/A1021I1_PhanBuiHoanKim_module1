@@ -7,7 +7,7 @@
 <body>
 <form>
     <input id = "Eng" type="text" placeholder="English">
-<!--    <input id="Vie" type="text" placeholder="Vietnamese">-->
+    <div input id="Vie" type="text" placeholder="Vietnamese"></div>
     <br>
     <br>
     <button onclick="Trans()">Translate</button>
@@ -19,8 +19,9 @@
     function Trans() {
         for (let i = 0; i < array1.length; i++) {
             let word = document.getElementById("Eng").value;
-                if (word = array1[i]) {
+                if (word === array1[i]) {
                     document.write(array2[i]);
+                    document.getElementById("Vie").innerHTML = array2[i];
                 }
             }
         }

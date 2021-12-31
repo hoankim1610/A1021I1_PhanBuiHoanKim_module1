@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
-    let message = (login == "Employee")?
+    let login = prompt('Nhap mess!');
+    let result = (login === "Employee")?
             "Hello" :
-            (login == "Director") ?
+            (login === "Director") ?
                 'Greetings' :
-                (login == "")?
+                (login === "")?
                    "No login":
                     "";
-    alert(message)
+    alert(result);
 </script>
 </body>
 </html>

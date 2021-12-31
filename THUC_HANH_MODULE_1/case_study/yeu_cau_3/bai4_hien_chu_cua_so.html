@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let letter = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    // let number = prompt("Nhap vao mot so muon chuyen thanh chu");
+    let result = "";
+    function alertString(num) {
+         for (let i = 0; i < num.length; i++ ) {
+            result += letter[num[i]];
+         }
+         return result;
+    }
+    alert(alertString(prompt("Nhap vao so")));
+</script>
+</body>
+</html>

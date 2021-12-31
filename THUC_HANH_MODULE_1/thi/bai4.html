@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class MydienThoai {
+        constructor(maDT, Ten, hangSX, Gia) {
+            this.maDT = maDT;
+            this.Ten = Ten;
+            this.hangSX = hangSX;
+            this.Gia = Gia;
+        }
+        getMa() {
+            return this.maDT;
+        }
+
+        getTen() {
+            return this.Ten;
+        }
+
+        getHang() {
+            return this.hangSX;
+        }
+
+        getGia() {
+            return this.Gia;
+        }
+
+        setMa(maDT) {
+            this.maDT = maDT;
+        }
+
+        setMa(Ten) {
+            this.Ten = Ten;
+        }
+
+        setMa(hang) {
+            this.hangSX = hang;
+        }
+
+        setMa(gia) {
+            this.Gia = gia;
+        }
+    }
+
+    let dienThoai = new MydienThoai(12, "iphone", "Iphone", 45000000);
+    let ma = dienThoai.getMa();
+    let ten = dienThoai.getTen();
+    let hang = dienThoai.getHang();
+    let gia = dienThoai.getGia();
+    console.log("Ma dien thoai : " + ma + "Ten dien thoai : " + ten +  "Hang dien thoai : " + hang + "Gia dien thoai" + gia);
+
+</script>
+</body>
+</html>

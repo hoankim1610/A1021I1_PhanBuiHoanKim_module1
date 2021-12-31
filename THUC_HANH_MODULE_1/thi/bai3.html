@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = new Array(parseInt(prompt("Nhap vao do dai mang")));
+    for (let i = 0; i < array.length; i++) {
+        let num = parseInt(prompt("Nhap vao mang so nguyen"));
+        array[i] = num;
+    }
+
+    function prime(number) {
+        if (number < 2) {
+            return false
+        } for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                return false
+            }
+        }
+        return true;
+        }
+    console.log(prime(array));
+
+    for (let i = 0; i < array.length; i++) {
+        if (prime(array[i])) {
+            console.log("So nguyen to la : " + array[i]);
+        }
+    }
+
+    array.sort(function(a, b) { return a - b }
+    )
+</script>
+</body>
+</html>

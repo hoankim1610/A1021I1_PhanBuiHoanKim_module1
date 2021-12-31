@@ -7,14 +7,14 @@
 <body>
 <script>
     let check = true;
-    let a = 10;
+    let a = parseInt(prompt('Nhap a'));
     function kiemTraKiTu(x) {
-        if (x.toFixed){
-            check = true;
-        } else {
+        if (isNaN(x)) {
             check = false;
+        } else {
+            check = true;
         }
-alert(check);
+        alert(check);
     }
     kiemTraKiTu(a);
 

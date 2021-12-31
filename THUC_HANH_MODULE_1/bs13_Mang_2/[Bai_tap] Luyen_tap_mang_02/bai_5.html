@@ -12,19 +12,31 @@
         array1[i]= value1;
         document.write(value1 + ' ');
     }
+
     document.write('<br>')
+
     let array2 = new Array(5);
     for (let j = 0; j < array2.length; j ++ ) {
         let value2 = prompt('Nhap vao chuoi thu 2');
-        array2[j]= value2;
+        array2[j] = value2;
         document.write(value2 + ' ');
     }
+
     document.write('<br>')
-    if (array1 == array2) {
-        document.write('Chuoi 1 bang chuoi 2');
-    } else if (array1 !== array2) {
-        document.write('Chuoi 1 khong bang chuoi 2')
+    for (let m = 0; m < array1.length; m++) {
+            if (array1[m] === array2[m]) {
+                document.write('Chuoi 1 bang chuoi 2');
+                break;
+            } else {
+                document.write('Chuoi 1 khong bang chuoi 2');
+                break;
+            }
     }
+    // if (array1 === array2) {
+    //     document.write('Chuoi 1 bang chuoi 2');
+    // } else {
+    //     document.write('Chuoi 1 khong bang chuoi 2')
+    // }
 </script>
 </body>
 </html>

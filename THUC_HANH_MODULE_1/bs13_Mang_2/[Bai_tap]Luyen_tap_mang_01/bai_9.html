@@ -6,19 +6,25 @@
 </head>
 <body>
 <script>
-    let arraya = new Array(10);
-    for (let i = 0; i < arraya.length; i++){
+    let arrayA = new Array(5);
+    let arrayC = [];
+    for (let i = 0; i < arrayA.length; i++){
         let a = parseInt(prompt("Nhap vao chuoi a"))
-        document.write(a + " ")
+        arrayA[i] = a;
+        // document.write(a + " ")
+        document.write(arrayC.push(a + " "));
     }
-    let arrayb = new Array(10);
-    for (let i = 0; i < arrayb.length; i ++){
+    let arrayB = new Array(5);
+    for (let j = 0; j < arrayB.length; j ++){
         let b = parseInt(prompt("Nhap vao chuoi b"))
-        document.write(b + " ")
+        arrayB[j] = b;
+        // document.write(b + " ")
+        document.write(arrayC.push(b + " "));
     }
-    let arrayc;
-    arrayc = arrayb + arraya;
-    document.write(arrayc);
+    // let arrayc = [];
+    // let arrayC = arrayA + arrayB;
+
+    // arrayc.push(arraya + arrayb);
 
 </script>
 </body>

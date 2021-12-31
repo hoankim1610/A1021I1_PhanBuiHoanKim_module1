@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt('Nhap so luong so nguyen to'));
+    let count = 0;
+    let i = 2;
+    let n = 0;
+    while (count < number) {
+        for (let j = 2; j < i; j++){
+            if (i % j === 0){
+                n ++;
+            }
+        }
+        if (n === 0){
+            document.write(i + '<br>');
+            count ++;
+        }
+        i++;
+        n = 0;
+    }
+</script>
+</body>
+</html>
