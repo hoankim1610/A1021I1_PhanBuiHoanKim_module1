@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27b5a36f-0b1a-46c8-8dce-8e94e4908388" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/excercise/e3_currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss2_loop/d.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss2_loop/excercise/e1_drawing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss2_loop/excercise/e2_DisplayPrime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss2_loop/excercise/e3_PrimeUnder100.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss2_loop/practice/p4_drawingMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss1_introduction_to_Java/excercise/p8_displayName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss1_introduction_to_Java/excercise/p9k_readNumbersToLetters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss1_introduction_to_Java/practice/p1/SystemTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss1_introduction_to_Java/practice/p2/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss1_introduction_to_Java/practice/p3/Operator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss1_introduction_to_Java/practice/p4/LinearEquationResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss1_introduction_to_Java/practice/p5/daysInMonth.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss2_loop/practice/checkPrime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/excercise/p8_displayName.java" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/excercise/e1_displayName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/excercise/p9k_readNumbersToLetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/excercise/e2_readNumbersToLetters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p1/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p1_SystemTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p2_Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p3/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p3_Operator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p4/LinearEquationResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p4_LinearEquationResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p5/daysInMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss1_introduction_to_Java/practice/p5_daysInMonth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_1/case_study/yeu_cau_3/bai5_chon_do_uong.html" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_1/case_study/yeu_cau_3/bai5_chon_do_uong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_1/r.html" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_1/r.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +39,7 @@
       <workItem from="1641289919717" duration="71000" />
       <workItem from="1641290047146" duration="6000" />
       <workItem from="1641385403358" duration="1891000" />
+      <workItem from="1641822561340" duration="1467000" />
     </task>
     <servers />
   </component>
