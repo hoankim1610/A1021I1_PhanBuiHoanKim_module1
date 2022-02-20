@@ -24,7 +24,7 @@ public class QuadraticEquation {
     }
 
     public double getDiscriminant() {
-        return Math.pow(this.b, 0.5) - 4*this.a*this.c;
+        return Math.pow(this.b, 0.5) - 4*this.a * this.c;
     }
 
     public double getRoot1() {

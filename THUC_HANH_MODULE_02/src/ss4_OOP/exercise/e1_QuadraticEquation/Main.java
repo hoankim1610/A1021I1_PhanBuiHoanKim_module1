@@ -7,13 +7,13 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter a");
-        double a = input.nextDouble();
+        double a = Integer.parseInt(input.nextLine());
 
         System.out.println("Enter b");
-        double b = input.nextDouble();
+        double b = Integer.parseInt(input.nextLine());
 
         System.out.println("Enter c");
-        double c = input.nextDouble();
+        double c = Integer.parseInt(input.nextLine());
 
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
         System.out.println("a =" + quadraticEquation.getA());
