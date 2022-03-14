@@ -45,14 +45,19 @@ public class StudentRepository implements IStudentRepository {
         }
     }
 
-    private int search(Student[] students, int code) {
+    @Override
+    public void search() {
+
+    }
+
+    private int search(Student[] students, int codeStudent) {
         boolean check = false;
         int count = 0;
         for (int i = 0; i < students.length; i++) {
             if (students[i] == null) {
                 break;
             }
-            if (students[i].getCodeStudent() == code) {
+            if (students[i].getCodeStudent() == codeStudent) {
                 check = true;
                 count = i;
             }

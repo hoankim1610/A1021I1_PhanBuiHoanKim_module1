@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27b5a36f-0b1a-46c8-8dce-8e94e4908388" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_1/case_study/yeu_cau_3/bai5_chon_do_uong.html" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_1/case_study/yeu_cau_3/bai5_chon_do_uong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_1/r.html" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_1/r.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss12_CollectionFrameWork/practice/p1/TestMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/out/production/THUC_HANH_MODULE_02/ss12_CollectionFrameWork/practice/p1/TestMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss12_CollectionFrameWork/practice/p1/TestMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/THUC_HANH_MODULE_02/src/ss12_CollectionFrameWork/practice/p1/TestMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,7 @@
       <workItem from="1641290047146" duration="6000" />
       <workItem from="1641385403358" duration="1891000" />
       <workItem from="1641822561340" duration="1467000" />
+      <workItem from="1645444919215" duration="40000" />
     </task>
     <servers />
   </component>

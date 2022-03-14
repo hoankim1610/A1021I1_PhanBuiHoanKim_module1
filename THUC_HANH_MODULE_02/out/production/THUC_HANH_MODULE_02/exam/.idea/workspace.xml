@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="710d55d0-484c-4522-be14-0732fd75ff61" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../kim.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/Furama.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/controller/CustomerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/controller/EmployeeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudy/controller/FuramaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phone/deleteByObject/deleteByObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phone/exception/NotFoundBaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phone/model/AuthenticPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phone/model/HandPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phone/model/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phone/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phone/util/FileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Phone/view/HomeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductManagement/Service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductManagement/View/ProductView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductManagement/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductManagement/data/product" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductManagement/exeption/NotFoundProductException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductManagement/model/AuthenticProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductManagement/model/HandProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductManagement/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductManagement/until/FileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exception/NotFoundBaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/FileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/HomeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../numbers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../result.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10_DSA/e2_LinkedList/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss10_DSA/e2_LinkedList/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss12_CollectionFrameWork/excercise/e1_usingArrayList_LinkedList/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss12_CollectionFrameWork/excercise/e1_usingArrayList_LinkedList/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss16_TextFle/e1/CopyFileExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss16_TextFle/p1/ReadFileExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss16_TextFle/p1/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss16_TextFle/p2/FindMaxValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss16_TextFle/p2/ReadAndWriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_array_method/excercise/removeElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss3_array_method/practice/p2_foundElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/mvc/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/mvc/controller/StudentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/mvc/model/repositoty/IStudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/mvc/model/repositoty/IStudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/mvc/model/repositoty/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/mvc/model/repositoty/StudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/ss12_CollectionFrameWork/practice/p1/TestMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/ss12_CollectionFrameWork/practice/p1/TestMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/ss3_array_method/practice/p1_ReverseElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/THUC_HANH_MODULE_02/ss3_array_method/practice/p1_ReverseElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mvc/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/model/repositoty/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mvc/model/repositoty/IStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mvc/model/repositoty/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mvc/model/repositoty/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_CollectionFrameWork/practice/p1/TestMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_CollectionFrameWork/practice/p1/TestMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_array_method/practice/p1_ReverseElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_array_method/practice/p1_ReverseElement.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="26Dm4PAqYAQGzisRvFPuiS1ONsw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../exam_Module2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="710d55d0-484c-4522-be14-0732fd75ff61" name="Changes" comment="" />
+      <created>1646966338577</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646966338577</updated>
+    </task>
+    <servers />
+  </component>
+</project>

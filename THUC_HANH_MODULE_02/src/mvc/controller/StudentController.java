@@ -10,11 +10,11 @@ public class StudentController {
         IStudentService iStudentService = new StudentService();
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("CHào mừng bạn đến với chương trình quản lí học sinh");
-            System.out.println("Mời bạn chọn chức năng thực hiện.");
-            System.out.println("1. Hiển thị danh sách học sinh");
-            System.out.println("2. Thêm mới học sinh");
-            System.out.println("3. Xóa học sinh");
+            System.out.println("Welcome to student's programme");
+            System.out.println("Choose a method.");
+            System.out.println("1. Display student");
+            System.out.println("2. Add student");
+            System.out.println("3. Delete student");
             System.out.println("4. Exit");
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {

@@ -29,9 +29,9 @@ public class p1_ReverseElement {
         }
 
         for (int j = 0; j < array.length / 2; j++) {
-            int temp = array[j];
-            array[j] = array[size - 1 - j];
-            array[size - 1 - j] = temp;
+//            int temp = array[j];
+//            array[j] = array[size - 1 - j];
+//            array[size - 1 - j] = temp;
         }
 
         System.out.printf("\n%-20s%s", "Reverse array: ", "");

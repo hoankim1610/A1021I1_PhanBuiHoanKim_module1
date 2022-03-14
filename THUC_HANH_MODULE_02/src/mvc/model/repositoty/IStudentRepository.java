@@ -6,5 +6,6 @@ public interface IStudentRepository {
     Student[] getAll();
     void add(Student student);
     void delete();
+    void search();
 }
 
