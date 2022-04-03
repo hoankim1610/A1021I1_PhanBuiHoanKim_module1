@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+}
+h1 {
+    font-family: "Calisto MT";
+    font-size: 50px;
+    text-align: center;
+    color: bisque;
+    background-color: darkslategray;
+}
+#static {
+    font-family: Arial;
+    padding: 100px;
+}
+
