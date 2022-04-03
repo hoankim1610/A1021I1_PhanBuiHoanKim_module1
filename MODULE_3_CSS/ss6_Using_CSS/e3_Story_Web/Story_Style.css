@@ -2,18 +2,52 @@
     margin: 0;
     padding: 0;
 }
-body {
+.body {
     text-align: center;
 }
 h1 {
-    font-family: "Calisto MT";
+    font-family: Pristina;
     font-size: 50px;
-    text-align: center;
-    color: bisque;
-    background-color: darkslategray;
+    text-align: right;
+    color: lavender;
+    background-color: darkgreen;
+    padding: 50px;
 }
-#static {
+.img1 {
+    padding-top: 100px;
+}
+.static {
     font-family: Arial;
-    padding: 100px;
+    text-align: justify;
+    padding: 50px 100px 200px;
 }
+.refer {
+    font-family: "Calisto MT";
+    padding: 0 150px 30px 220px;
+}
+.oprefer {
+    font-style: oblique;
+    font-family: "Britannic Bold";
+    color: darkgreen;
+}
+#body.start {
+    text-align: left;
+}
+.auth {
+    color: darkgreen;
+    text-decoration: none;
+}
+.firstpara {
+    text-indent: 50px;
+    font-family: Verdana, Haettenschweiler, sans-serif;
+    font-style: oblique;
+}
+.para {
+    text-indent: 50px;
+    line-height: 30px;
+}
+
+
+
+
 
