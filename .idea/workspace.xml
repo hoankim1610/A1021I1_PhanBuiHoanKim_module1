@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27b5a36f-0b1a-46c8-8dce-8e94e4908388" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ex/ex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss6_Using_CSS/e3_Story_Web/Story_Script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss6_Using_CSS/example/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss6_Using_CSS/example/style3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss6_Using_CSS/example/web.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss7_Design_Web/e1_Layout_HTML5_CSS/Layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss7_Design_Web/e1_Layout_HTML5_CSS/Layout_Script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss7_Design_Web/e1_Layout_HTML5_CSS/Layout_Style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss7_Design_Web/e2_simplification/Simply_Style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss7_Design_Web/e2_simplification/simply.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss7_Design_Web/e3_RWD_Layout/RWD_Layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss7_Design_Web/e3_RWD_Layout/RWD_Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE_3_CSS/ss6_Using_CSS/e3_Story_Web/Story_Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss6_Using_CSS/e3_Story_Web/Story_Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE_3_CSS/ss6_Using_CSS/e3_Story_Web/Story_Web.html" beforeDir="false" afterPath="$PROJECT_DIR$/MODULE_3_CSS/ss6_Using_CSS/e3_Story_Web/Story_Web.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +54,7 @@
       <workItem from="1645444919215" duration="40000" />
       <workItem from="1648813197450" duration="63000" />
       <workItem from="1648813262352" duration="133000" />
+      <workItem from="1649250813264" duration="12000" />
     </task>
     <servers />
   </component>
