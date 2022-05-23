@@ -1,0 +1,5 @@
+com\example\SystemTime\p1_SystemTime\SystemTimeServlet.class
+com\example\SystemTime\p2_web_display\Servletlogin.class
+com\example\SystemTime\p3_Currency\ServletCurrency.class
+com\example\SystemTime\p4_Dictionary\ServletDictionary.class
+com\example\SystemTime\HelloServlet.class

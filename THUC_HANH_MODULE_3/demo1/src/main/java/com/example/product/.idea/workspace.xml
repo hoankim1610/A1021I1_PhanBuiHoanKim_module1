@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="edf1f190-2090-4d10-8ee4-5ee2271d6090" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../../../DemoJSTL/src/main/webapp/student/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/ServletProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/artifacts/SystemTime_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/artifacts/SystemTime_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/Module3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/java/com/example/SystemTime/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/java/com/example/SystemTime/p1_SystemTime/SystemTimeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/java/com/example/SystemTime/p2_web_display/Servletlogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/java/com/example/SystemTime/p3_Currency/ServletCurrency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/java/com/example/SystemTime/p4_Dictionary/ServletDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/webapp/WEB-INF/charge.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/webapp/WEB-INF/dictionary.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/webapp/WEB-INF/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/WEB-INF/charge.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/WEB-INF/classes/com/example/SystemTime/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/WEB-INF/classes/com/example/SystemTime/p1_SystemTime/SystemTimeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/WEB-INF/classes/com/example/SystemTime/p2_web_display/Servletlogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/WEB-INF/classes/com/example/SystemTime/p3_Currency/ServletCurrency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/WEB-INF/classes/com/example/SystemTime/p4_Dictionary/ServletDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/WEB-INF/dictionary.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/WEB-INF/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/SystemTime-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/classes/com/example/SystemTime/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/classes/com/example/SystemTime/p1_SystemTime/SystemTimeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/classes/com/example/SystemTime/p2_web_display/Servletlogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/classes/com/example/SystemTime/p3_Currency/ServletCurrency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p1_Create_Web_Display_System_Time/target/classes/com/example/SystemTime/p4_Dictionary/ServletDictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/6.8/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/6.8/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../MODULE_3_JAVA_WEB/p2_/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../../.." />
+  </component>
+  <component name="ProjectId" id="28HwhUuIpoP7LhuIyWrVoieQaJV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="edf1f190-2090-4d10-8ee4-5ee2271d6090" name="Default Changelist" comment="" />
+      <created>1650886937878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650886937878</updated>
+      <workItem from="1650886939057" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
