@@ -1,13 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Dictionary</title>
+    <title>Title</title>
 </head>
 <body>
-<form>
-<h2>Translate Eng into Vie</h2>
-
-
-</form>
+<h4>Result: ${result}</h4>
 </body>
 </html>

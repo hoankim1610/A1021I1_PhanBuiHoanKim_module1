@@ -1,0 +1,63 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>List Student</title>
+    <th:block th:replace="common_student :: head-student"></th:block>
+</head>
+<body>
+    <nav th:replace="~{common_student :: header-student}"></nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="/student/create">Go create student</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>List Student</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <span style="color: green" th:text="${msg}"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Date of birth</th>
+                            <th scope="col" colspan="2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="studentObj, loop : ${studentList}">
+                            <th scope="row" th:text="${loop.count}"></th>
+                            <td th:text="${studentObj.id}"></td>
+                            <td th:text="${studentObj.name}"></td>
+                            <td th:text="${studentObj.dateOfBirth}"></td>
+                            <td>
+                                <a th:href="@{/student/detail(id=${studentObj.id})}">Detail (RP)</a>
+                            </td>
+                            <td>
+                                <a th:href="@{/student/detail/
+                                (id=${studentObj.id})}">Detail (PV)</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- MDB -->
+    <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+    ></script>
+</body>
+<th:block th:replace="common_student :: footer-student"></th:block>
+</html>

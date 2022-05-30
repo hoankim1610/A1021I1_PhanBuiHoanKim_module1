@@ -14,3 +14,7 @@ com/codegym/practice/ss1_springmvc_overview/p2_customer/controller/CustomerServl
  com.codegym.practice.ss1_springmvc_overview.p2_customer.controller.CustomerServlet
 com/codegym/practice/ss1_springmvc_overview/e1_currency/CurrencyController.java
  com.codegym.practice.ss1_springmvc_overview.e1_currency.CurrencyController
+com/codegym/practice/ss1_springmvc_overview/e2_dictionary/DictionaryService.java
+ com.codegym.practice.ss1_springmvc_overview.e2_dictionary.DictionaryService
+com/codegym/practice/ss1_springmvc_overview/e2_dictionary/DictionaryController.java
+ com.codegym.practice.ss1_springmvc_overview.e2_dictionary.DictionaryController

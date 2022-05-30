@@ -1,27 +1,20 @@
 package com.codegym.practice.ss1_springmvc_overview.e2_dictionary;
 
-public class Dictionary {
-    private long usd;
-    private double rate;
+import java.util.HashMap;
+import java.util.Map;
 
-    public Cunrrency(long usd, double rate) {
-        this.usd = usd;
-        this.rate = rate;
+public class DictionaryService {
+    static Map<String, String> dictionary = new HashMap<>();
+
+    static {
+        dictionary.put("hello", "xin chao");
+        dictionary.put("scenery", "canh dep");
+        dictionary.put("earth", "Trai dat");
+        dictionary.put("yellow", "mau vang");
     }
 
-    public long getUsd() {
-        return usd;
-    }
-
-    public void setUsd(long usd) {
-        this.usd = usd;
-    }
-
-    public double getRate() {
-        return rate;
-    }
-
-    public void setRate(double rate) {
-        this.rate = rate;
+    public static String search(String val) {
+        String result = dictionary.get(val);
+        return result;
     }
 }

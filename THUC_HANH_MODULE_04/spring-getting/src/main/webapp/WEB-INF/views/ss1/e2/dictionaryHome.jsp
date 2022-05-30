@@ -5,8 +5,8 @@
 </head>
 <body>
 <form action="/search">
-    Search: <input name="search">
-    <button>Submit</button>
+    Input an English word: <input name="search">
+    <button>Search</button>
 </form>
 </body>
 </html>

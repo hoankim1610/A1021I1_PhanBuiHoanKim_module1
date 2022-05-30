@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <th:block th:replace="common_student :: head-student"></th:block>
+</head>
+<body>
+    <nav th:replace="~{common_student :: header-student}"></nav>
+    <h2>Detail Student</h2>
+    <div>
+        Id: <span th:text="${studentObj.id}"></span>
+    </div>
+    <div>
+        Name: <span th:text="${studentObj.name}"></span>
+    </div>
+    <div>
+        Date of birth: <span th:text="${studentObj.dateOfBirth}"></span>
+    </div>
+</body>
+<th:block th:replace="common_student :: footer-student"></th:block>
+
+</html>
