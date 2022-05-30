@@ -1,27 +1,25 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Sandwich</title>
+    <title>Title</title>
 </head>
 <body>
-<form action = "/sandwich" method = "post">
-    <h1>Sandwich</h1>
-    <table>
-        <tr>
-            <th>Lettuce</th>
-            <th><input type = "checkbox" name = "sandwich" value="lettuce"></th>
-        </tr>
-        <tr>
-            <th>Tomato</th>
-            <th><input type = "checkbox" name = "sandwich" value="tomato"></th>
-        </tr>
-        <tr>
-            <th>Cheese</th>
-            <th><input type = "checkbox" name = "sandwich" value="cheese"></th>
-        </tr>
-        <button>Click</button>
-    </table>
+<h1>Sandwich condiments</h1>
+<form action="save" method="post">
+    <input type="checkbox" name="condiment" value="Lettuce">Lettuce
+    <input type="checkbox" name="condiment" value="Tomato">Tomato
+    <input type="checkbox" name="condiment" value="Mustard">Mustard
+    <input type="checkbox" name="condiment" value="Sprouts">Sprouts
+    <button>Save</button>
 </form>
-<div>Your choice: ${res}</div>
+
+Result: ${condiment}
+
+<form:form action="submit" method="post">
+    <form:label path="c">Test</form:label>
+    <form:checkboxes  items="${condiments}" delimiter="|" path="c"></form:checkboxes>
+    <form:button>Submit</form:button>
+</form:form>
 </body>
 </html>
