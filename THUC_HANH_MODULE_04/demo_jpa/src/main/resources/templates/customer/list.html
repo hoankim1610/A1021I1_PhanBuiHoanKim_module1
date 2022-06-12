@@ -1,0 +1,72 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>List Customer</title>
+<!--    <th:block th:replace="common_customer :: head-customer"></th:block>-->
+</head>
+<body>
+<!--    <nav th:replace="~{common_customer :: header-customer}"></nav>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="/customer/create">Go create customer</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>List Customer</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <span style="color: green" th:text="${message}"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table" border="1">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col" colspan="4">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="customerObj, loop : ${customerList}">
+                            <th scope="row" th:text="${loop.count}"></th>
+                            <td th:text="${customerObj.id}"></td>
+                            <td th:text="${customerObj.name}"></td>
+                            <td th:text="${customerObj.address}"></td>
+                            <td>
+                                <a th:href="@{/customer/delete(id=${customerObj.id})}">Delete</a>
+                            </td>
+                            <td>
+                            <a th:href="@{/customer/edit(id=${customerObj.id})}">Edit</a>
+                            </td>
+                            <td>
+                                <a th:href="@{/customer/detail(id=${customerObj.id})}">Detail (RP)</a>
+                            </td>
+                            <td>
+                                <a th:href="@{/customer/detail/
+                                (id=${customerObj.id})}">Detail (PV)</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <!-- MDB -->
+    <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+    ></script>
+</body>
+<!--<th:block th:replace="common_customer :: footer-customer"></th:block>-->
+</html>

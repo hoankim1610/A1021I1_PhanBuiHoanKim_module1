@@ -17,14 +17,6 @@ public class StudentController {
     @Autowired
     private IStudentService iStudentService;
 
-//    @GetMapping(value = "/list")
-//    public String goStudentList(ModelMap modelMap) {
-////        modelMap.addAttribute("studentList", this.iStudentService.findAll());
-//        modelMap.put("studentList", this.iStudentService.findAll());
-//        return "list_student";
-//    }
-
-//    @GetMapping(value = {"/list", ""})
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public ModelAndView goStudentList() {
 

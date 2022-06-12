@@ -1,0 +1,112 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Blog</title>
+    <!--    <th:block th:replace="common_customer :: head-customer"></th:block>-->
+</head>
+<body>
+<!--    <nav th:replace="~{common_customer :: header-customer}"></nav>-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="/blog/create">Let's create your own Blog!</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Discover Blog</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <span style="color: green" th:text="${message}"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table" border="1">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Content</th>
+                    <th scope="col" colspan="2">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="blogObj : ${blogList}">
+<!--                    <th scope="row" th:text="${loop.count}"></th>-->
+                    <td th:text="${blogObj.id}"></td>
+                    <td th:text="${blogObj.title}"></td>
+                    <td th:text="${blogObj.content}"></td>
+                    <td>
+                        <a th:href="@{/blog/delete(id=${blogObj.id})}">Delete</a>
+                    </td>
+                    <td>
+                        <a th:href="@{/blog/edit(id=${blogObj.id})}">Edit</a>
+                    </td>
+<!--                    <td>-->
+<!--                        <a th:href="@{/blog/detail(id=${customerObj.id})}">Detail (RP)</a>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <a th:href="@{/customer/detail/-->
+<!--                                (id=${customerObj.id})}">Detail (PV)</a>-->
+<!--                    </td>-->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div>
+
+</div>
+
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js">
+</script>
+</body>
+<!--<th:block th:replace="common_customer :: footer-customer"></th:block>-->
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--&lt;!&ndash;<head th:replace="/layout :: head">&ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<!--<h3>Discover Blogs</h3>-->
+<!--<p>-->
+<!--    <a th:href="@{/blog/create}">-->
+<!--        Let's create your own Blog!-->
+<!--    </a>-->
+<!--</p>-->
+<!--<div class="notify">-->
+<!--    <div th:if="${messsage}">-->
+<!--        <span th:text="${messsage}"></span>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<table id = "customers" border="1">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>Title</th>-->
+<!--        <th>Content</th>-->
+<!--        <th>Edit</th>-->
+<!--        <th>Delete</th>-->
+<!--        <th>View</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr th:each="row,rowStat : ${blogList}">-->
+<!--        <td th:text="${row.getTitle()}"></td>-->
+<!--        <td th:text="${row.getContent()}"></td>-->
+<!--        <td><a th:href="@{/blog/{id}/edit(id=${row.getId()})}">Edit</a></td>-->
+<!--        <td><a th:href="@{/blog/{id}/delete(id=${row.getId()})}">Delete</a></td>-->
+<!--        <td><a th:href="@{/blog/{id}/view(id=${row.getId()})}">View</a></td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--&lt;!&ndash;<footer th:replace="/layout :: footer"></footer>&ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->
