@@ -1,0 +1,18 @@
+html {
+    padding: 50px 200px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+body {
+    background: antiquewhite;
+}
+
+h3 {
+    text-align: center;
+    color: dimgray;
+}
+
+a {
+    color: darkcyan;
+}

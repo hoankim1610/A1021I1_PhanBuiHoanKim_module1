@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="" rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+<!--<nav th:replace="~{common_blog :: header-blog}"></nav>-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <a th:href = "@{/product/form}">Let's create!</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Product</h3>
+        </div>
+    </div>
+
+    <form th:action="@{'/products'}" method="get">
+        <input name="nameSearch" placeholder="blog name">
+        <select name="categorySearch">
+            <option value="">Search Category</option>
+            <option th:each="cate:${categoryList}" th:value="${cate.id}" th:text="${cate.name}"></option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
+    <div class="row">
+        <div>
+            <span style="color: green" th:text="${message}"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table" border="1">
+                <thead class="table-dark">
+                <tr>
+                    <!--                    <th scope="col">#</th>-->
+                    <!--                    <th scope="col">STT</th>-->
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Category</th>
+                    <th scope="col" colspan="2">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="blogObj : ${productList}">
+                    <!--                    <th scope="row" th:text="${loop.count}"></th>-->
+                    <!--                    <td th:text="${blogObj.index}"></td>-->
+                    <td th:text="${blogObj.id}"></td>
+                    <td th:text="${blogObj.name}"></td>
+                    <td th:text="${blogObj.price}"></td>
+                    <td th:text="${blogObj.color}"></td>
+                    <td th:text="${blogObj.getCategory().getName()}"></td>
+
+                    <td>
+                        <a th:href="@{/blog/delete(id=${blogObj.id})}">Delete</a>
+                    </td>
+
+                    <td>
+                        <a th:href="@{/blog/edit(id=${blogObj.id})}">Edit</a>
+                    </td>
+</head>
+<body>
+
+</body>
+</html>

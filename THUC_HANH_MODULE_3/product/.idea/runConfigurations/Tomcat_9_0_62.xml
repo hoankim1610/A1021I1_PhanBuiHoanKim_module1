@@ -12,7 +12,7 @@
     <server-settings>
       <option name="BASE_DIRECTORY_NAME" value="415022d7-a59a-4272-be89-ddaa687c499b" />
       <option name="HTTP_PORT" value="8089" />
-      <option name="JNDI_PORT" value="8080" />
+      <option name="JNDI_PORT" value="8089" />
     </server-settings>
     <log_file checked="false" alias="Tomcat Localhost Log" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost.*" />
     <log_file checked="false" alias="Tomcat Catalina Log" path="%IDEA_RUN:CATALINA_BASE%/logs/catalina.*" />

@@ -1,9 +1,11 @@
 package com.example.blogn.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
-@Table(name = "blog")
+@Table(name = "blogn")
 public class Blogn {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,6 +15,7 @@ public class Blogn {
     private String content;
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
+    @JsonBackReference
     private Category category;
 
     public Blogn() {

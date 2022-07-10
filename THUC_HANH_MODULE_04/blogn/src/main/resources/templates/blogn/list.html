@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List Blogn</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        function addNew() {
+            let title = $('#producer').val();
+            let content = $('#model').val();
+            let category = $('#price').val();
+            let newBlogn = {
+                producer: title,
+                model: content,
+                price: category
+            };
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                data: JSON.stringify(newBlogn),
+                url: "/blogn",
+                success: successHandler
+
+            });
+            event.preventDefault();
+        }
+
+        function successHandler() {
+            $.ajax({
+                type: "GET",
+                url: "/blogn",
+                success: function (data) {
+                    let content = '    <tr>\n' +
+                        '        <td>Title</td>\n' +
+                        '        <td>Content</td>\n' +
+                        '        <td>Category</td>\n' +
+                        '    </tr>';
+                    for (let i = 0; i < data.length; i++) {
+                        content += getBlogn(data[i]);
+                    }
+                    document.getElementById('blognList').innerHTML = content;
+                }
+            });
+        }
+
+        function getBlogn(blogn) {
+            return `<tr><td >${blogn.title}</td><td >${blogn.content}</td><td >${blogn.category}</td>` +
+                `<td><a class="delete" href="${blogn.id}">Delete</a></td></tr>`;
+        }
+
+        $(document).ready(function () {
+            $('.delete').click(function (event) {
+                let a = $(this);
+                let smartphoneId = a.attr("href");
+                $.ajax({
+                    type: "DELETE",
+                    url: `/blogn/${blognId}`,
+                    success: function (data) {
+                        a.parent().parent().remove();
+                    }
+
+                });
+                event.preventDefault();
+            });
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
