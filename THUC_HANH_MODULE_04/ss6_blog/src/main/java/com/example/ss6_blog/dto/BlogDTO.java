@@ -2,15 +2,15 @@ package com.example.ss6_blog.dto;
 
 import com.example.ss6_blog.model.Category;
 
-import javax.persistence.Entity;
 import javax.validation.constraints.NotEmpty;
 
 public class BlogDTO {
+
     private int id;
     @NotEmpty(message = "This is not empty!")
     private String title;
     @NotEmpty(message = "This is not empty!")
-    private  String content;
+    private String content;
     private Category category;
 
     public BlogDTO() {

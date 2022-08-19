@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: justify;
+    font-family: Arial, Haettenschweiler, sans-serif;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 0;
+    margin:3px;
+}
+
+.card:hover {
+    border: 1px solid #777;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+}
+
+.end {
+    text-align: justify;
+}
+
+/*.clearfix:after {*/
+/*    content: "";*/
+/*    display: table;*/
+/*    clear: both;*/
+/*}*/

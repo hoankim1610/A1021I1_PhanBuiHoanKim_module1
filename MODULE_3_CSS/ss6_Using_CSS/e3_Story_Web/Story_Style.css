@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+}
+h1 {
+    font-family: Pristina;
+    font-size: 50px;
+    text-align: right;
+    color: lavender;
+    background-color: darkgreen;
+    padding: 50px;
+}
+.img1 {
+    padding-top: 100px;
+}
+.static {
+    font-family: Arial;
+    text-align: justify;
+    padding: 50px 100px 200px;
+}
+#refer {
+    list-style: none;
+    font-family: "Calisto MT";
+    background-size: 50px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.oprefer {
+    font-style: oblique;
+    font-family: "Britannic Bold";
+    color: darkgreen;
+}
+#body.start {
+    text-align: left;
+}
+.auth {
+    color: darkgreen;
+    text-decoration: none;
+}
+.firstpara {
+    text-indent: 50px;
+    font-family: Verdana, Haettenschweiler, sans-serif;
+    font-style: oblique;
+    padding: 50px 0 30px 0;
+}
+.para {
+    text-indent: 50px;
+    line-height: 30px;
+    padding: 0 0 30px 0;
+}
+.end {
+    text-decoration: none;
+    color: darkgreen;
+    text-align: right;
+}
+.last {
+    text-align: right;
+}
+
+
+
+
+

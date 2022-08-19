@@ -1,0 +1,187 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Service</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <head>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg" style="background-color: lightblue">
+                    <img width="100px" height="140px"
+                         src="https://furamavietnam.com/wp-content/uploads/2018/08/logo@2x.png">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p> 103 – 105 Đường Võ Nguyên Giáp, Phường Khuê Mỹ, Quận Ngũ hành Sơn, Tp. Đà Nẵng, Việt Nam
+
+                        7.0 km từ Sân bay Quốc tế Đà Nẵng </p>
+                    <p>
+                        84-236-3847 333/888
+
+                        reservation@furamavietnam.com</p>
+                </nav>
+                <!-- nav component-->
+                <nav class="navbar navbar-expand-lg bg-light" style="width: 80%">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Home</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav nav-pills nav-fill">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        Service
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Villa</a></li>
+                                        <li><a class="dropdown-item" href="#">House</a></li>
+                                        <li><a class="dropdown-item" href="#">Room</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Other Services</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Customer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Contract</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">Contract Detail</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-4" type="search" placeholder="Search"
+                                       aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <!-- nav component-->
+            </div>
+        </header>
+    </head>
+
+    <!-- Content -->
+    <nav style="width: 100%; text-align: center">
+    <div class="card" style="width: 50rem; background-color: brown">
+        <img src="https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas-_Exterior-1-F.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Villa</h5>
+            <p class="card-text">Từ 3 đến 5 sao, không gian thoáng đãng, có hồ bơi riêng</p>
+            <a style="color: darkseagreen" href="##">More>></a>
+            <div>
+            <a href="#" class="btn btn-primary">Sửa</a>
+                <a href="#" class="btn btn-primary">Xóa</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 50rem;">
+        <img src="https://bazaarvietnam.vn/wp-content/uploads/2015/08/FURAMA-DANANG-Diamond-villas-3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">House</h5>
+            <p class="card-text">Ở như ở nhà, không lo giá cả, đồ dùng đầy đủ, tiện nghi</p>
+            <a style="color: darkseagreen" href="##">More>></a>
+            <div>
+                <a href="#" class="btn btn-primary">Sửa</a>
+                <a href="#" class="btn btn-primary">Xóa</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 50rem;">
+        <img src="https://photosrp.dotproperty.com.vn/2.0-VN-1293463-PP-4288618-14615870745db95688c4b85-1-490-325-ct/3-bedroom-villa-for-rent-in-furama-villas-danang-da-nang.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Room</h5>
+            <p class="card-text">Phòng đơn lẫn phòng đôi, dịch vụ hiện tại, nhân viên chăm sóc khách hàng tốt</p>
+            <a style="color: darkseagreen" href="##">More>></a>
+            <div>
+                <a href="#" class="btn btn-primary">Sửa</a>
+                <a href="#" class="btn btn-primary">Xóa</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!-- Content -->
+
+
+    <div style="margin-top: 50px">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-muted" style="background-color: navajowhite">
+            <section class="d-flex justify-content-center justify-content-lg-between p-1 border-bottom">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
+                            <h6 class="text-uppercase fw-bold mb-3">
+                                FURAMA FOR HAPPY LIFE
+                            </h6>
+                            <p>
+                                <img src="https://hotel24h.net/data/news/2829/27343872.jpg" width="250">
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <button class="btn btn-outline-success" type="submit">VIEW ON MAP</button>
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Cần Thơ</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Hồ Chí Minh</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Hải Phòng</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Hà Nội</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Cà Mau</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Kiên Giang</a>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-6">
+                            <p>
+                                <a href="#!" class="text-reset">Liên Hệ</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Tuyển Dụng</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Gía cả</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Trợ giúp</a>
+                            </p>
+                            <p style="background-color: lightblue">
+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Copyright -->
+            <div class="text-center p-2" style="color: #277BC0; background-color: lightblue">
+                © 2022 Furama Resort Da Nang
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+                crossorigin="anonymous"></script>
+    </div>

@@ -10,6 +10,7 @@
         }
 
         body {
+            padding-top: 50px;
             background: antiquewhite;
         }
 
@@ -47,13 +48,14 @@
 <div class="form">
 <p>
     <a th:href="@{/blog}">
-        Back to Blog site!
+        Back to List site!
     </a>
 </p>
 <div class="row">
     <div>
         <span style="color: green" th:text="${message}"></span>
     </div>
+    <hr>
 </div>
 <div id="form">
     <form th:action="@{/blog/save}" th:object="${blogDTO}"
@@ -78,7 +80,7 @@
                         th:text="${categoryObj.name}"></option>
             </select>
         </div>
-        <input type="submit" value="Done"/>
+        <input type="submit" class="btn btn-outline-dark" value="Done"/>
     </form>
 </div>
 </div>

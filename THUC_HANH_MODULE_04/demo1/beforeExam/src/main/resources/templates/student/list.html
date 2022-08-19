@@ -1,0 +1,94 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"  />
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <a th:href = "@{/student/create}">Let's create new one!</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>List</h3>
+        </div>
+    </div>
+
+    <form th:action="@{/student}" method="get">
+        <div style= "width: 40%" class="input-group input-group-sm mb-3">
+            <input style="height: 40px" name="nameSearch" placeholder="input name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"> &nbsp;
+<!--            <select name="instructorSearch" class="form-select form-select-sm" aria-label=".form-select-sm example">-->
+<!--                <option value="" selected> Search </option>-->
+<!--                <option th:each="ins:${instructorList}" th:value="${ins.id}" th:text="${ins.name}"></option>-->
+<!--            </select> &nbsp;-->
+            <button type="submit" class="btn btn-outline-dark">Search</button>
+        </div>
+    </form>
+    <div class="row">
+        <div>
+            <span style="color: green" th:text="${message}"></span>
+        </div>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table table-success table-striped">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Point</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Instructor</th>
+                    <th scope="col" colspan="3">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="studentObj : ${studentList}">
+                    <td th:text="${studentObj.id}"></td>
+                    <td th:text="${studentObj.name}"></td>
+                    <td th:text="${studentObj.point}"></td>
+                    <td th:text="${studentObj.email}"></td>
+                    <td th:text="${studentObj.phone}"></td>
+                    <td th:text="${studentObj.instructors[0].name}"></td>
+
+                    <td>
+                        <a th:href="@{/student/deletePage(id=${studentObj.id})}">Delete
+                        </a>
+                    </td>
+
+                    <td>
+                        <a th:href="@{/student/edit(id=${studentObj.id})}">Edit</a>
+                    </td>
+
+                    <td>
+                        <a th:href="@{/student/detail(id=${studentObj.id})}">Detail</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div>
+    <div>
+        <a th:href="@{'/student'(page=${studentList.number - 1}, nameSearch=${nameSearch})}" th:if="${studentList.hasPrevious()}">Previous</a>
+        <span th:text="${studentList.number + 1}"></span>/<span th:text="${studentList.totalPages}"></span>
+        <a th:href="@{'/student'(page=${studentList.number + 1}, nameSearch=${nameSearch})}" th:if="${studentList.hasNext()}">Next</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</body>
+</html>

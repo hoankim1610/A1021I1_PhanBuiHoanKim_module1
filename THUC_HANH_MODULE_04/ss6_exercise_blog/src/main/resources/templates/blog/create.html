@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create customer</title>
+    <!--  <th:block th:replace="common_student :: head-student"></th:block>-->
+</head>
+<body>
+<!--<nav th:replace="~{common_student :: header-student}"></nav>-->
+<h2>Let's create your Blog</h2>
+<form action="/blog/create" th:object="${blog}" method="post">
+    <div>
+        Title:
+        <input type="text" th:field="*{title}" />
+    </div>
+    <div>
+        Content:
+        <input type="text" th:field="*{content}" />
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</body>
+<!--<th:block th:replace="common_student :: footer-student"></th:block>-->
+</html>

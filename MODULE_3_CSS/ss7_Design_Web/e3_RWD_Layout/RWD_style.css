@@ -1,0 +1,102 @@
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 50px;
+    background: black;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header ul li{
+    display: inline;
+    flex: 0.7;
+    height: 5px;
+    text-align: center;
+    font-size: initial;
+    padding-top: 15px;
+    color: white;
+}
+
+header ul li:hover {
+    color: mediumpurple;
+    cursor: grab;
+}
+
+header ul li:last-child{
+    display: inline;
+    flex: 5;
+    text-align: right;
+    padding-right: 20px;
+}
+
+main{
+    height: 800px;
+    display: flex;
+}
+
+main img{
+    height: 50%;
+    width: 50%;
+}
+
+nav {
+    flex: 1.5;
+    background: darkgrey;
+}
+nav ul {
+    list-style: none;
+    margin: 20px;
+}
+nav ul li {
+    padding: 15px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: blueviolet;
+}
+article{
+    flex: 7;
+    padding: 20px;
+    background: white;
+    text-align: justify;
+    height: 700px;
+    line-height: 50px;
+}
+aside{
+    flex: 1.5;
+    text-align: center;
+    background: darkgrey;
+    position: static;
+    width: 20%;
+    display: flex;
+}
+aside ul li:hover {
+    background-color: mediumpurple;
+    color: white;
+}
+aside ul li {
+    list-style: none;
+    padding: 30px 50px 30px;
+    margin: 50px;
+    background: lavender;
+}
+footer{
+    height: 50px;
+    background: black;
+    color: white ;
+    flex: 0.7;
+    text-align: center;
+    font-size: initial;
+    padding-top: 15px;
+}
+

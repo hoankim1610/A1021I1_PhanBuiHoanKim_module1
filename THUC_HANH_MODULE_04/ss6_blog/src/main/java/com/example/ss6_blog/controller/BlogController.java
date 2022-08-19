@@ -28,6 +28,7 @@ public class BlogController {
 
     @Autowired
     private ICategoryService iCategoryService;
+
     @ModelAttribute
     public List<Category> getList() {
         return iCategoryService.findAll();
@@ -79,7 +80,7 @@ public class BlogController {
             iBlogService.save(blog);
             model.addAttribute("blogDTO", blogDTO);
 //            model.addAttribute("message", "Congratulation! Success!");
-            redirectAttributes.addFlashAttribute("message", "Congratulation!");
+            redirectAttributes.addFlashAttribute("message", "Congratulation! Success!");
         }
         return "redirect:/blog";
     }
@@ -94,14 +95,14 @@ public class BlogController {
     public String showEdit(@RequestParam int id, Model model) {
         Blog blog = iBlogService.findById(id).orElse(null);
         model.addAttribute("blogDTO", blog);
-        return "/blog/detail";
+        return "/blog/createEdit";
     }
 
-    @GetMapping("/detail")
+    @GetMapping("/deletePage")
     public String showDelete(@RequestParam int id, Model model) {
         Blog blog = iBlogService.findById(id).orElse(null);
         model.addAttribute("blogDTO", blog);
-        return "/blog/detail";
+        return "/blog/delete";
     }
 
     @PostMapping("/delete")
@@ -110,5 +111,21 @@ public class BlogController {
         redirectAttributes.addFlashAttribute("message", "Delete successfully!");
         return "redirect:/blog";
     }
+
+    @GetMapping(value = "/detail")
+    public String goDetail(@RequestParam Integer id, Model model) {
+        Blog blog = this.iBlogService.findById(id).orElse(null);
+        model.addAttribute("blogObj", blog);
+
+        return "/blog/detail";
+    }
+
+//    @GetMapping(value = "/detail/{id}")
+//    public String detail(@PathVariable Integer id, Model model) {
+//        Blog blog = iBlogService.findById(id).orElse(null);
+//        model.addAttribute("blogDTO", blog);
+//
+//        return "redirect:/blog";
+//    }
 }
 

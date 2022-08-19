@@ -1,0 +1,66 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #a9a9a9;
+    font-size: 15px;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: yellow;
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    background-image: linear-gradient(to left, rgba(28, 146, 210, 0.5), rgba(228, 229, 230, 0.3));
+    flex: 15%;
+}
+
+nav ul {
+    /*padding: 0;*/
+    list-style-type: none;
+}
+
+article {
+    flex: 70%;
+    padding: 10px;
+}
+
+
+aside {
+    background: red;
+    flex: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background: purple;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+img{
+    float: left;
+    margin-right: 20px;
+}
+
+p{
+    text-align: justify;
+    /*margin-left: 20px;*/
+}

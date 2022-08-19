@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog List</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="/blog/create">Let's create a blog!</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <span style="color: green" th:text="${message}"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="table">
+                <thead class="table-dark">
+                <tr>
+                    <!--                            <th scope="col">#</th>-->
+                    <th scope="col">Id</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Content</th>
+                    <th scope="col" colspan="2">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="blogObj, loop : ${blogList}">
+                    <th scope="row" th:text="${loop.count}"></th>
+                    <td th:text="${blogObj.id}"></td>
+                    <td th:text="${blogObj.title}"></td>
+                    <td th:text="${blogObj.content}"></td>
+<!--                    <td>-->
+<!--                        <a th:href="@{/blog/detail(id=${blogObj.id})}">Detail (RP)</a>-->
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <a th:href="@{/blog/detail/-->
+<!--                                (id=${blogObj.id})}">Detail (PV)</a>-->
+<!--                    </td>-->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
+    <style>
+        html {
+            width: 100%;
+        }
+
+        body {
+            padding-top: 50px;
+            background: antiquewhite;
+        }
+
+        .form {
+            width: 25%;
+            margin: 50px 550px;
+        }
+
+        h3 {
+            text-align: center;
+            color: dimgray;
+        }
+
+        a {
+            color: darkcyan;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        td {
+            border: 2px salmon;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<h3 class="text-secondary">Create new one</h3>
+<div class="form">
+    <p>
+        <a th:href="@{/product}">
+            Back to List site!
+        </a>
+    </p>
+    <div class="row">
+        <div>
+            <span style="color: green" th:text="${message}"></span>
+        </div>
+        <hr>
+    </div>
+    <div id="form">
+        <form th:action="@{/product/save}" th:object="${productDTO}"
+              method="POST" novalidate="novalidate">
+            <input type="hidden" name="id" th:field="*{id}"/>
+            <div>
+                <label>Name</label>
+                <input type="text" name="name" th:field="*{name}"/>
+                <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+            </div>
+            <div>
+                <label>Price</label>
+                <input type="text" name="price" th:field="*{price}"/>
+                <span th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></span>
+            </div>
+            <div>
+                <label>Status</label>
+                <input type="text" name="status" th:field="*{status}"/>
+                <span th:if="${#fields.hasErrors('status')}" th:errors="*{status}"></span>
+            </div>
+            <div>
+                <label>Category</label>
+                <select th:field="*{category}" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option value="" selected>-- Category --</option>
+                    <option th:each="categoryObj : ${categoryList}"
+                            th:value="${categoryObj.id}"
+                            th:text="${categoryObj.name}"></option>
+                </select>
+            </div>
+            <input type="submit" class="btn btn-outline-dark" value="Done"/>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+</html>

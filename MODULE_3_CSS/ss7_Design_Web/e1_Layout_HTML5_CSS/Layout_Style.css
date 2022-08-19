@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 0.9em;
+    background-color: darkgrey;
+    width: 100%;
+}
+header, footer {
+    padding: 10px;
+    color: white;
+    background-color: darkred;
+    width: 100%;
+}
+section {
+    flex: 7.5;
+    padding: 10px;
+    background-color: dimgrey;
+    color: black;
+}
+article {
+    text-align: justify;
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgray;
+}
+nav ul {
+    padding: 0;
+}
+nav ul li {
+    color: white;
+    padding: 10px;
+    background-color: black;
+    display: inline;
+    margin: 1px;
+}
+nav ul li:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+aside {
+    flex: 2.5;
+    display: flex;
+    text-align: right;
+}
+img {
+    width: 200px;
+}

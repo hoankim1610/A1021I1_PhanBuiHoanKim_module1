@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface IBlogService {
 
     Page<Blog> findAll(Pageable pageable);
-
+//
     Page<Blog> findAll(Pageable pageable, String nameSearch, String categorySearch);
 
     void save(Blog blog);

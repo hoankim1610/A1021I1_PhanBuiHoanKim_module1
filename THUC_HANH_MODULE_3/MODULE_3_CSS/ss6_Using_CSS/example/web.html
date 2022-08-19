@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<header>
+    <h1>Java</h1>
+</header>
+<main>
+    <nav>
+        <ul class="navIndex">
+            <li><h5>Introduction</h5></li>
+            <li><h5>Data structure</h5></li>
+            <li><h5>String & regex</h5></li>
+            <li><h5>File Binary</h5></li>
+            <li><h5>File Text</h5></li>
+            <li><h5>Search and sort</h5></li>
+        </ul>
+    </nav>
+    <article>
+        <div id="intro" class="show">
+            <div><img src="data:image/jpeg;base64,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"></div>
+            <p>
+                JAVA was developed by James Gosling at Sun Microsystems Inc in the year 1991, later acquired by Oracle
+                Corporation. It is a simple programming language. Java makes writing, compiling, and debugging programming
+                easy. It helps to create reusable code and modular programs.
+
+                Java is a class-based, object-oriented programming language and is designed to have as few implementation
+                dependencies as possible. A general-purpose programming language made for developers to write once run
+                anywhere that is compiled Java code can run on all platforms that support Java. Java applications are
+                compiled to byte code that can run on any Java Virtual Machine. The syntax of Java is similar to c/c++.
+
+                History
+                Java’s history is very interesting. It is a programming language created in 1991. James Gosling, Mike
+                Sheridan, and Patrick Naughton, a team of Sun engineers known as the Green team initiated the Java language
+                in 1991. Sun Microsystems released its first public implementation in 1996 as Java 1.0. It provides no-cost
+                -run-times on popular platforms. Java1.0 compiler was re-written in Java by Arthur Van Hoff to strictly
+                comply with its specifications. With the arrival of Java 2, new versions had multiple configurations built
+                for different types of platforms.
+
+                In 1997, Sun Microsystems approached the ISO standards body and later formalized Java, but it soon withdrew
+                from the process. At one time, Sun made most of its Java implementations available without charge, despite
+                their proprietary software status. Sun generated revenue from Java through the selling of licenses for
+                specialized products such as the Java Enterprise System.
+            </p>
+        </div>
+        <div id="data" class="hide">
+            Hello guys, Data Structure is a building block of programs. It's even said that "Data Structure +
+            Algorithms= Program". That's why a good knowledge of data structure is very important for any programmers,
+            including Java developers. Data structure gives you the option to store your data so that you can access it
+            based on your requirement. For example, if you want a fast search based upon the username then you can use
+            HashMap, but that's only possible if you know data structure and their implementations in the programming
+            language you are using, and that's what you will learn in this article.
+
+            Java API provides built-in support for common data structures, essential for writing programs like an array,
+            linked list, map, set, stack, and queue. You don't need to implement these data structures by yourself, you
+            can directly use them in your program, thanks to the rich and efficient implementation provided by Java API.
+
+            This is also one reason why Java is the best programming language. Since data structure is core to any
+            program and the choice of a particular data structure significantly affects both the functionality and
+            performance of Java applications, it's worth an effort to explore different data structures available in
+            Java.
+
+            Many of these data structure is part of the hugely popular Java Collection Framework, and almost all Java
+            programs maybe, except hello world make use of Collection in one or another form.
+
+            In this Java tutorial, we will take a look at a standard data structure. Array, linked list, Stack, Queue,
+            Map, Set, and How they are implemented in Java, along with how to use them.
+
+            Btw, if you are a complete beginner in the world of data structure and algorithms, then I also suggest you
+            first go through a comprehensive course like Data Structures and Algorithms: Deep Dive Using Java to learn
+            the basics and master it.
+
+            Data Structure and Algorithms are vital for becoming a better developer, and any investment you make in
+            terms of your time, money, and learning effort will pay you for a long time to come.
+
+
+            Read more:
+            https://www.java67.com/2013/08/ata-structures-in-java-programming-array-linked-list-map-set-stack-queue.html#ixzz7FH7ihaun
+        </div>
+        <div id="string" class="hide"> The class String includes methods for examining individual characters of the
+            sequence, for comparing strings,
+            for searching strings, for extracting substrings, and for creating a copy of a string with all characters
+            translated to uppercase or to lowercase. Case mapping is based on the Unicode Standard version specified by
+            the
+            Character class.
+
+            The Java language provides special support for the string concatenation operator ( + ), and for conversion
+            of
+            other objects to strings. For additional information on string concatenation and conversion, see The Java
+            Language Specification.
+
+            Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a
+            NullPointerException to be thrown.
+
+            A String represents a string in the UTF-16 format in which supplementary characters are represented by
+            surrogate
+            pairs (see the section Unicode Character Representations in the Character class for more information). Index
+            values refer to char code units, so a supplementary character uses two positions in a String.
+
+            The String class provides methods for dealing with Unicode code points (i.e., characters), in addition to
+            those
+            for dealing with Unicode code units (i.e., char values).
+
+            Unless otherwise noted, methods for comparing Strings do not take locale into account. The Collator class
+            provides methods for finer-grain, locale-sensitive String comparison.
+
+            Implementation Note:
+            The implementation of the string concatenation operator is left to the discretion of a Java compiler, as
+            long as
+            the compiler ultimately conforms to The Java Language Specification. For example, the javac compiler may
+            implement the operator with StringBuffer, StringBuilder, or java.lang.invoke.StringConcatFactory depending
+            on
+            the JDK version. The implementation of string conversion is typically through the method toString, defined
+            by
+            Object and inherited by all classes in Java.
+            See Java Language Specification:
+            15.18.1 String Concatenation Operator +
+            Since:
+            1.0
+            See Also:
+            Object.toString(), StringBuffer, StringBuilder, Charset, Serialized Form
+        </div>
+        <div id="binary" class="hide"> The File class is Java’s representation of a file or directory path name. Because
+            file and directory names have different formats on different platforms, a simple string is not adequate to
+            name them. The File class contains several methods for working with the path name, deleting and renaming
+            files, creating new directories, listing the contents of a directory, and determining several common
+            attributes of files and directories.
+
+            It is an abstract representation of file and directory pathnames.
+            A pathname, whether abstract or in string form can be either absolute or relative. The parent of an abstract
+            pathname may be obtained by invoking the getParent() method of this class.
+            First of all, we should create the File class object by passing the filename or directory name to it. A file
+            system may implement restrictions to certain operations on the actual file-system object, such as reading,
+            writing, and executing. These restrictions are collectively known as access permissions.
+            Instances of the File class are immutable; that is, once created, the abstract pathname represented by a
+            File object will never change.
+            Implementation Note:
+            The implementation of the string concatenation operator is left to the discretion of a Java compiler, as
+            long as
+            the compiler ultimately conforms to The Java Language Specification. For example, the javac compiler may
+            implement the operator with StringBuffer, StringBuilder, or java.lang.invoke.StringConcatFactory depending
+            on
+            the JDK version. The implementation of string conversion is typically through the method toString, defined
+            by
+            Object and inherited by all classes in Java.
+            See Java Language Specification:
+            15.18.1 String Concatenation Operator +
+            Since:
+            1.0
+            See Also:
+            Object.toString(), StringBuffer, StringBuilder, Charset, Serialized Form
+        </div>
+        <div id="text" class="hide"> boolean canExecute() : Tests whether the application can execute the file denoted
+            by this abstract pathname.
+            boolean canRead() : Tests whether the application can read the file denoted by this abstract pathname.
+            boolean canWrite() : Tests whether the application can modify the file denoted by this abstract pathname.
+            int compareTo(File pathname) : Compares two abstract pathnames lexicographically.
+            boolean createNewFile() : Atomically creates a new, empty file named by this abstract pathname .
+            static File createTempFile(String prefix, String suffix) : Creates an empty file in the default
+            temporary-file directory.
+            boolean delete() : Deletes the file or directory denoted by this abstract pathname.
+            boolean equals(Object obj) : Tests this abstract pathname for equality with the given object.
+            boolean exists() : Tests whether the file or directory denoted by this abstract pathname exists.
+            String getAbsolutePath() : Returns the absolute pathname string of this abstract pathname.
+            long getFreeSpace() : Returns the number of unallocated bytes in the partition .
+            String getName() : Returns the name of the file or directory denoted by this abstract pathname.
+            String getParent() : Returns the pathname string of this abstract pathname’s parent.
+            File getParentFile() : Returns the abstract pathname of this abstract pathname’s parent.
+            String getPath() : Converts this abstract pathname into a pathname string.
+            boolean isDirectory() : Tests whether the file denoted by this pathname is a directory.
+            boolean isFile() : Tests whether the file denoted by this abstract pathname is a normal file.
+            boolean isHidden() : Tests whether the file named by this abstract pathname is a hidden file.
+            long length() : Returns the length of the file denoted by this abstract pathname.
+            String[] list() : Returns an array of strings naming the files and directories in the directory .
+            Since:
+            1.0
+            See Also:
+            Object.toString(), StringBuffer, StringBuilder, Charset, Serialized Form
+        </div>
+        <div id="search" class="hide"> Related Post : FileReader and FileWriter in Java
+
+            This article is contributed by Nishant Sharma. If you like GeeksforGeeks and would like to contribute, you
+            can also write an article using contribute.geeksforgeeks.org or mail your article to
+            contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other
+            Geeks.
+
+            Please write comments if you find anything incorrect, or you want to share more information about the topic
+            discussed above.
+
+            A String represents a string in the UTF-16 format in which supplementary characters are represented by
+            surrogate
+            pairs (see the section Unicode Character Representations in the Character class for more information). Index
+            values refer to char code units, so a supplementary character uses two positions in a String.
+
+            The String class provides methods for dealing with Unicode code points (i.e., characters), in addition to
+            those
+            for dealing with Unicode code units (i.e., char values).
+
+            Unless otherwise noted, methods for comparing Strings do not take locale into account. The Collator class
+            provides methods for finer-grain, locale-sensitive String comparison.
+
+            Implementation Note:
+            The implementation of the string concatenation operator is left to the discretion of a Java compiler, as
+            long as
+            the compiler ultimately conforms to The Java Language Specification. For example, the javac compiler may
+            implement the operator with StringBuffer, StringBuilder, or java.lang.invoke.StringConcatFactory depending
+            on
+            the JDK version. The implementation of string conversion is typically through the method toString, defined
+            by
+            Object and inherited by all classes in Java.
+            See Java Language Specification:
+            15.18.1 String Concatenation Operator +
+            Since:
+            1.0
+            See Also:
+            Object.toString(), StringBuffer, StringBuilder, Charset, Serialized Form
+        </div>
+    </article>
+    <aside>
+        <p>Advertising</p>
+    </aside>
+</main>
+<footer>Copyright</footer>
+<script src="main.js"></script>
+</body>
+</html>

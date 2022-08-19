@@ -1,0 +1,31 @@
+body {
+    font-size: large;
+    font-style: italic;
+}
+h1 {
+    color: mediumpurple;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+span {
+    color: blue;
+}
+a {
+    color: aqua;
+}
+#p2 {
+    text-indent: 50px;
+}
+#p3 {
+    text-indent: 50px;
+}
