@@ -1,0 +1,41 @@
+<h2>Student Profile</h2>
+<table class="table table-striped">
+  <tr>
+    <th>Avatar</th>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let stu of student">
+    <td>
+      <img style="width: 50px" [src] ="stu.avatar"/>
+    </td>
+    <td>{{stu.id}}</td>
+    <td>{{stu.name}}</td>
+    <td>{{stu.address}}</td>
+    <td>{{stu.phone}}</td>
+    <td>{{stu.email}}</td>
+    <td>
+      <button type="button" class="btn btn-primary">Delete</button>
+      <a>Edit</a>
+    </td>
+  </tr>
+  <tr>
+
+  </tr>
+  <tr>
+
+  </tr>
+  <tr>
+
+  </tr>
+</table>
+<!--<img [src]="student.avatar">-->
+<!--<p>Id: {{student.id}}</p>-->
+<!--<p>Name: {{student.name}}</p>-->
+<!--<p>Address: {{student.address}}</p>-->
+<!--<p>Phone: {{student.phone}}</p>-->
+<!--<p>Email: {{student.email}}</p>-->
