@@ -1,0 +1,27 @@
+<h1>Calculator</h1>
+<div>
+  <p>Number 1: </p>
+  <input type="number" #element id="num1" [value]="num1" placeholder="Enter number 1"
+         (change)="changeNum1(element.value)">
+</div>
+<div>
+  <p>Number 2: </p>
+  <input type="number" #element1 id="num2" [value]="num2" placeholder="Enter number 2"
+         (change)="changeNum2(element1.value)">
+</div>
+<div>
+  <p>Operation: </p>
+  <select #element2 id="exampleFormControlSelect1" [value]="operation"
+          (change)="changeOperation(element2.value)">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+</div>
+<div>
+  <button (click)="calculate()">Calculate</button>
+</div>
+<div>
+  <p>Kết quả: {{result}}</p>
+</div>
