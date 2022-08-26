@@ -1,0 +1,8 @@
+<h2>Color Picker</h2>
+<div>
+  <p>Choose color</p>
+  <input #element type='color' (change)="changeColor(element.value)">
+</div>
+<p>Your color</p>
+<p style="height: 500px" [style.background] = "color"></p>
+
