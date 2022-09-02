@@ -1,0 +1,11 @@
+.btn {
+  background-color: black;
+  color: darkseagreen;
+}
+.btn:hover {
+  background-color: darkseagreen;
+  color: black;
+}
+p:hover {
+  color: seagreen;
+}

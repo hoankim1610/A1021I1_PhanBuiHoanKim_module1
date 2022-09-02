@@ -1,4 +1,4 @@
-<html xmlns:th="http://www.thymeleaf.org">
+<body xmlns:th="http://www.thymeleaf.org">
 <title>Service List</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -6,124 +6,268 @@
 <meta charset="UTF-8">
 <!-- Header -->
 <head>
-    <header class="container text-lg-start">
-        <section class="d-flex justify-content-lg-between" style="background-color: lightblue">
-            <div class="text-md-start mt-5">
-                <div class="row mt-2">
-                    <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-5" style="color: black">
-                        <nav class=" navbar-expand-lg">
-                            <img width="100px" height="140px"
-                                 src="https://furamavietnam.com/wp-content/uploads/2018/08/logo@2x.png">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </nav>
-                    </div>
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-3" style="color: black">
-                        <p> 103 – 105 Đường Võ Nguyên Giáp, Phường Khuê Mỹ, Quận Ngũ hành Sơn, Tp. Đà Nẵng,
-                            Việt Nam
+  <header class="header">
+    <!-- Main Navigation -->
+    <div>
+      <nav class="navbar navbar-expand-lg" style="background-color: #277BC0">
+        <a class="navbar-brand" style="color: #FFF4CF" href="#">FURAMA</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="color: #FFF4CF" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #FFF4CF" routerLink="/customerList">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #FFF4CF" href="#">Service</a>
+            </li>
 
-                            7.0 km từ Sân bay Quốc tế Đà Nẵng </p>
-                    </div>
-                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mb-4" style="color: black">
-                        <p>
-                            84-236-3847 333/888
-
-                            reservation@furamavietnam.com
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- nav component-->
-        <nav class="navbar navbar-expand-lg" style="width: 100%; background-color: black">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Home</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav nav-pills nav-fill">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
-                                Service
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Villa</a></li>
-                                <li><a class="dropdown-item" href="#">House</a></li>
-                                <li><a class="dropdown-item" href="#">Room</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Other Services</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Customer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Contract</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Contract Detail</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-4" type="search" placeholder="Search"
-                               aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <!-- nav component-->
-    </header>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #FFF4CF" href="#">Employee</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: #FFF4CF" href="#" id="navbarDropdown" role="button"
+                 data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false">
+                Contract
+              </a>
+              <div class="dropdown-menu" style="background-color: #FFCB42" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Contract detail</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 mr-5">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-2 my-sm-0 btn-outline-light" style="background-color: #FFB200" type="submit">Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
 </head>
 <!-- Header -->
 
-
 <body>
-<!-- Content -->
-<div class="row mt-5 mb-2 justify-content-center">
-    <div class="container text-center" style="width: 50rem">
-        <img src="https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas-_Exterior-1-F.jpg"
-             class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Villa</h5>
-            <p class="card-text">Từ 3 đến 5 sao, không gian thoáng đãng, có hồ bơi riêng</p>
-            <a style="color: darkseagreen" href="##">More>></a>
-            <div>
-                <a href="#" class="btn btn-primary m-lg-2">Edit</a>
-                <a href="#" class="btn btn-primary m-lg-2">Delete</a>
-            </div>
+<div class="background-image intro-2">
+  <div class="full-bg-img">
+    <div class="mask rgba-black-strong flex-center">
+      <div class="container">
+        <div style="display: flex; justify-content: center;align-items: center">
+          <h1 style="color: white;">FACILITIES</h1>
         </div>
+      </div>
     </div>
-    <div class="container text-center" style="width: 50rem;">
-        <img src="https://bazaarvietnam.vn/wp-content/uploads/2015/08/FURAMA-DANANG-Diamond-villas-3.jpg"
-             class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">House</h5>
-            <p class="card-text">Ở như ở nhà, không lo giá cả, đồ dùng đầy đủ, tiện nghi</p>
-            <a style="color: darkseagreen" href="##">More>></a>
-            <div>
-                <a href="#" class="btn btn-primary m-lg-2">Edit</a>
-                <a href="#" class="btn btn-primary m-lg-2">Delete</a>
-            </div>
-        </div>
-    </div>
-    <div class="container text-center" style="width: 50rem;">
-        <img src="https://photosrp.dotproperty.com.vn/2.0-VN-1293463-PP-4288618-14615870745db95688c4b85-1-490-325-ct/3-bedroom-villa-for-rent-in-furama-villas-danang-da-nang.jpg"
-             class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Room</h5>
-            <p class="card-text">Phòng đơn lẫn phòng đôi, dịch vụ hiện tại, nhân viên chăm sóc khách hàng tốt</p>
-            <a style="color: darkseagreen" href="##">More>></a>
-            <div>
-                <a href="#" class="btn btn-primary m-lg-2">Edit</a>
-                <a href="#" class="btn btn-primary m-lg-2">Delete</a>
-            </div>
-        </div>
-    </div>
+  </div>
 </div>
-<!-- Content -->
+<div class="container-fluid d-flex justify-content-center">
+  <table border="0" id="tableFacitities">
+    <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>
+        <div class="card mt-5 ml-5" style="width: 18rem">
+          <img class="card-img-top"
+               src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/238597854.jpg?k=85c0b22f7bbacede657f74fbc030caf1a75575db1ad5ce2966c6d09d45e5a9bd&o=&hp=1"
+               alt="Card image cap">
+          <div class="card-body bg_card">
+            <h5 class="card-title">Santorin HoiAn Villa</h5>
+            <p class="card-text"><img src="https://img.icons8.com/color-glass/20/000000/marker.png"/> 202 Nguyen Duy
+              Hieu,
+              Cam Chau, Hoi An, Cẩm Châu, Hội An, Việt Nam</p>
+            <a href="#" class="btn btn-outline-primary" style="background-color: #FFF4CF">Edit</a>
+            <button type="button" class="btn btn-outline-primary ml-4" style="background-color: #FFF4CF"
+                    data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card mt-5 ml-5" style="width: 18rem">
+          <img class="card-img-top"
+               src="https://pix8.agoda.net/hotelImages/6945065/-1/d5d086d5350437206263579a5fb79117.jpg?ca=8&ce=1&s=1024x768"
+               alt="Card image cap">
+          <div class="card-body bg_card">
+            <h5 class="card-title">The Nam An Villa Hoi An</h5>
+            <p class="card-text"><img src="https://img.icons8.com/color-glass/20/000000/marker.png"/>19-21-23 Hai Thuong
+              Lan
+              Ong Street, Hoi An City, Viet Nam, Cam Chau, Hoi An, Vietnam</p>
+            <a href="#" class="btn btn-outline-primary" style="background-color: #FFF4CF">Edit</a>
+            <button type="button" class="btn btn-outline-primary ml-4" style="background-color: #FFF4CF"
+                    data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card mt-5 ml-5" style="width: 18rem; height: 25rem">
+          <img class="card-img-top" height="48%"
+               src="https://sayhi.vn/blog/wp-content/uploads/seo_beginner_auto_post/2019/01/10/savanna-1.jpg"
+               alt="Card image cap">
+          <div class="card-body bg_card">
+            <h5 class="card-title">Villa Savanna Rơm Hội An</h5>
+            <p class="card-text"><img src="https://img.icons8.com/color-glass/20/000000/marker.png"/>Lê Thánh Tông, An
+              Mỹ,
+              Cẩm Châu, Hội An</p>
+            <a href="#" class="btn btn-outline-primary mt-4" style="background-color: #FFF4CF">Edit</a>
+            <button type="button" class="btn btn-outline-primary ml-4 mt-4" style="background-color: #FFF4CF"
+                    data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <!-- row 2 !-->
+    <tr>
+      <td>
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top"
+               src="https://media-cdn.tripadvisor.com/media/photo-s/0b/0b/7b/66/the-beach-house-resort.jpg"
+               alt="Card image cap">
+          <div class="card-body bg_card">
+            <h5 class="card-title">The Beach House</h5>
+            <p class="card-text"><img src="https://img.icons8.com/color-glass/20/000000/marker.png"/> Gili Trawangan
+              Main
+              Street, Pemenang, West Nusa Tenggara 83352 Indonesia</p>
+            <a href="#" class="btn btn-outline-primary" style="background-color: #FFF4CF">Edit</a>
+            <button type="button" class="btn btn-outline-primary ml-4" style="background-color: #FFF4CF"
+                    data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top"
+               src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/ee/33/a7/hoi-an-ancient-house.jpg?w=1200&h=-1&s=1"
+               alt="Card image cap">
+          <div class="card-body bg_card">
+            <h5 class="card-title">Ancient House</h5>
+            <p class="card-text"><img src="https://img.icons8.com/color-glass/20/000000/marker.png"/>Tong Van Suong
+              Street,
+              Thanh Dong Hamlet, Cam Thanh Village, Hội An Việt Nam</p>
+            <a href="#" class="btn btn-outline-primary" style="background-color: #FFF4CF">Edit</a>
+            <button type="button" class="btn btn-outline-primary ml-4" style="background-color: #FFF4CF"
+                    data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top"
+               src="https://media.mia.vn/uploads/blog-du-lich/the-garden-house-resort-phu-quoc-khu-nghi-duong-co-nha-vuon-xinh-dep-rong-4-ha-chuan-3-sao-01-1616762655.jpg"
+               alt="Card image cap">
+          <div class="card-body bg_card">
+            <h5 class="card-title">The Garden House</h5>
+            <p class="card-text"><img src="https://img.icons8.com/color-glass/20/000000/marker.png"/>Tổ 1, Gành Gió, xã
+              Cửa
+              Dương, thành phố Phú Quốc, tỉnh Kiên Giang.</p>
+            <a href="#" class="btn btn-outline-primary" style="background-color: #FFF4CF">Edit</a>
+            <button type="button" class="btn btn-outline-primary ml-4" style="background-color: #FFF4CF"
+                    data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- row 3 !-->
+    <tr>
+      <td>
+        <div class="card mt-5 ml-5" style="width: 18rem;height: 25rem">
+          <img class="card-img-top" style="height: 49%"
+               src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/161851949.jpg?k=2ceb9d0c7869e28c42d512f96c1f37dffa47f9dbc24d6781d6e6aa11ef32dd11&o=&hp=1"
+               alt="Card image cap">
+          <div class="card-body bg_card">
+            <h5 class="card-title">Le House Boutique</h5>
+            <p class="card-text"><img src="https://img.icons8.com/color-glass/20/000000/marker.png"/>85 - 87 Ha Bong, Đà
+              Nẵng, Việt Nam</p>
+            <a href="#" class="btn btn-outline-primary mt-4" style="background-color: #FFF4CF">Edit</a>
+            <button type="button" class="btn btn-outline-primary ml-4 mt-4" style="background-color: #FFF4CF"
+                    data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top"
+               src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/142934612.jpg?k=bd7b25088fdd9144c1afa89b15fa0bf96cc232130b94046b1cd8365aa0a325bf&o=&hp=1"
+               alt="Card image cap">
+          <div class="card-body bg_card">
+            <h5 class="card-title">Raon Apartment and Hotel</h5>
+            <p class="card-text"><img src="https://img.icons8.com/color-glass/20/000000/marker.png"/>97A Hoàng Bích Sơn,
+              Đà Nẵng, Việt Nam</p>
+            <a href="#" class="btn btn-outline-primary mt-4" style="background-color: #FFF4CF">Edit</a>
+            <button type="button" class="btn btn-outline-primary ml-4 mt-4" style="background-color: #FFF4CF"
+                    data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card mt-5 ml-5" style="width: 18rem;">
+          <img class="card-img-top"
+               src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/357219020.jpg?k=ac596a11ff2898fa5426621776591700ba376e91df034a7cb91571372cf4a4cf&o=&hp=1"
+               alt="Card image cap">
+          <div class="card-body bg_card">
+            <h5 class="card-title">Golden Rose Hotel</h5>
+            <p class="card-text"><img src="https://img.icons8.com/color-glass/20/000000/marker.png"/>56 Loseby Phường An
+              Hải Bắc, Quận Sơn Trà, Đà Nẵng, Việt Nam</p>
+            <a href="#" class="btn btn-outline-primary mt-4" style="background-color: #FFF4CF">Edit</a>
+            <button type="button" class="btn btn-outline-primary ml-4 mt-4" style="background-color: #FFF4CF"
+                    data-toggle="modal" data-target="#exampleModal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do you want to delete this facility?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 

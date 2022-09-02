@@ -1,0 +1,21 @@
+.dropdown-item {
+  color: azure;
+}
+.dropdown-item:hover {
+  background-color: darkseagreen;
+  color: black;
+}
+.btn {
+  background-color: black;
+  color: darkseagreen;
+}
+.btn:hover {
+  background-color: darkseagreen;
+  color: black;
+}
+.nav-link {
+  color: azure;
+}
+.nav-link:hover {
+  color: black;
+}
