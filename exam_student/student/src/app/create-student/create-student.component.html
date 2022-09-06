@@ -1,0 +1,82 @@
+<!--<p class="align-content-center"><h2>Create Student</h2>-->
+<!--<br>-->
+<!--<div class="container-fluid">-->
+<!--  <div class="col-6">-->
+<!--    <form [formGroup]="studentForm" (ngSubmit)="addStudent()">-->
+<!--      -->
+<!--      <div class="form-group">-->
+<!--        <label>Id:</label>-->
+<!--        <input class="form-control" formControlName="id">-->
+<!--      </div>-->
+<!--      <div class="alert alert-danger" role="alert"-->
+<!--      *ngIf="studentForm.get('id')?.invalid && studentForm.get('id')?.dirty">-->
+<!--      </div>-->
+<!--      -->
+<!--      <div class="form-group">-->
+<!--        <label>Name:</label>-->
+<!--        <input class="form-control" formControlName="name">-->
+<!--      </div>-->
+<!--      <div class="alert alert-danger" role="alert"-->
+<!--           *ngIf="studentForm.get('name')?.invalid && studentForm.get('name')?.dirty">-->
+<!--      </div>-->
+<!--      -->
+<!--      <div class="form-group">-->
+<!--        <label>Address:</label>-->
+<!--        <input class="form-control" formControlName="address">-->
+<!--      </div>-->
+<!--      <div class="alert alert-danger" role="alert"-->
+<!--           *ngIf="studentForm.get('address')?.invalid && studentForm.get('address')?.dirty">-->
+<!--      </div>-->
+<!--      -->
+<!--      <div class="form-group">-->
+<!--        <label>Phone:</label>-->
+<!--        <input class="form-control" formControlName="phone">-->
+<!--      </div>-->
+<!--      -->
+<!--      <div class="form-group">-->
+<!--        <label>Email:</label>-->
+<!--        <input class="form-control" formControlName="email">-->
+<!--      </div>-->
+<!--      -->
+<!--      <div class="form-group">-->
+<!--        <label>Mark:</label>-->
+<!--        <input class="form-control" formControlName="mark">-->
+<!--      </div>-->
+<!--      <-->
+<!--    </form>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<label>Avatar</label>
+<input #avatar>
+<br>
+
+<label>Id</label>
+<input #id>
+<br>
+
+<label>Name</label>
+<input #name>
+<br>
+
+<label>Address</label>
+<input #address>
+<br>
+
+<label>Phone</label>
+<input #phone>
+<br>
+
+<label>Email</label>
+<input #email>
+<br>
+
+<label>Mark</label>
+<input #mark>
+<br>
+<button (click)="addStudent(avatar.value, id.value, name.value, address.value, phone.value, email.value, mark.value)">
+  Create
+</button>
+
+
