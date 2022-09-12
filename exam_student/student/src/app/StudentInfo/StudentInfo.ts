@@ -21,7 +21,7 @@ export class StudentInfo {
     },
   ];
 
-  static getAllStudent() {
+  static getAll() {
     return this.studentList;
   }
 }

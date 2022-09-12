@@ -1,28 +1,31 @@
 <p class="align-content-center"><h2>Student Information</h2>
-<br>
-<label><img style="width: 50%" [src]="stu.avatar"></label>
-<br>
-<label>Id:</label>
-<span>{{stu.id}}</span>
-<br>
-<label>Name:</label>
-<span>{{stu.name}}</span>
-<br>
-<label>Address:</label>
-<span>{{stu.address}}</span>
-<br>
-<label>Phone:</label>
-<span>{{stu.phone}}</span>
-<br>
-<label>Email:</label>
-<span>{{stu.email}}</span>
-<br>
-<label>Mark:</label>
-<span>{{stu.mark}}</span>
-<br>
-<label>Result:</label>
-<span *ngIf="stu.mark > 5" style="color: #7abaff">PASS</span>
-<span scope="row" *ngIf="stu.mark <= 5" style="color: #a71d2a">FAIL</span>
-<br>
-<label>Change Mark: </label>
-<input #element type="number" min="0" max="10" (change)="changeMark(element.value)">
+<div *ngIf="student">
+  <label>
+    <img style="width: 50%" [src]="student.avatar">
+  </label>
+  <br>
+  <label>Id:</label>
+  <span>{{student.id}}</span>
+  <br>
+  <label>Name:</label>
+  <span>{{student.name}}</span>
+  <br>
+  <label>Address:</label>
+  <span>{{student.address}}</span>
+  <br>
+  <label>student:</label>
+  <span>{{student.phone}}</span>
+  <br>
+  <label>Email:</label>
+  <span>{{student.email}}</span>
+  <br>
+  <label>Mark:</label>
+  <span>{{student.mark}}</span>
+  <br>
+  <label>Result:</label>
+  <span *ngIf="student.mark > 5" style="color: #7abaff">PASS</span>
+  <span scope="row" *ngIf="student.mark <= 5" style="color: #a71d2a">FAIL</span>
+  <br>
+  <label>Change Mark: </label>
+  <input type="number" min="0" max="10" [(ngModel)]="student.mark" )]>
+</div>

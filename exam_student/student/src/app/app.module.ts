@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { StudentManagementComponent } from './student-management/student-management.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
-import { StudentServiceComponent } from './service/student-service/student-service.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {NgxPaginationModule} from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -15,12 +16,14 @@ import {ReactiveFormsModule} from "@angular/forms";
     StudentManagementComponent,
     StudentDetailComponent,
     CreateStudentComponent,
-    StudentServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

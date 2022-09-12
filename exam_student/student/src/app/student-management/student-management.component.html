@@ -1,4 +1,5 @@
 <h2>Student Profile</h2>
+<a routerLink="create" class="btn btn-primary m-3">Create</a>
 <table class="table table-striped table-hover caption-sm">
 <thead class="table">
   <tr>
@@ -12,12 +13,12 @@
     <th scope="col">Result</th>
     <th scope="col">Action</th>
   </tr>
-  <tr *ngFor="let stu of studentList">
+  <tr *ngFor="let stu of studentList |">
     <td scope="row">
       <img style="width: 50px" [src] ="stu.avatar"/>
     </td>
     <td scope="row">{{stu.id}}</td>
-    <td scope="row">{{stu.name}}</td>
+    <td scope="row">{{stu.name | titlecase}}</td>
     <td scope="row">{{stu.address}}</td>
     <td scope="row">{{stu.phone}}</td>
     <td scope="row">{{stu.email}}</td>
@@ -29,7 +30,7 @@
         Delete
       </button>
       <button style="background-color: #b21f2d; color: azure" type="button" class="btn m-lg-3">Edit</button>
-      <button style="background-color: #28a745; color: azure" type="button" class="btn" (click)="temp = stu">Detail</button>
+      <a style="background-color: #28a745; color: azure" type="button" class="btn" [routerLink]="['detail', stu.id]">Detail</a>
     </td>
   </tr>
 </thead>
@@ -55,14 +56,14 @@
 </nav>
 <!--pagination-->
 
-<div class="container">
-  <div class="row">
-    <app-student-detail [stu]="temp"></app-student-detail>
-  </div>
-  <div>
-    <app-create-student (showCreate)="create($event)"></app-create-student>
-  </div>
-</div>
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <app-student-detail [stu]="temp"></app-student-detail>-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <app-create-student (showCreate)="create($event)"></app-create-student>-->
+<!--  </div>-->
+<!--</div>-->
 
 <!-- Modal -->
 <div class="modal fade" id="deleteId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

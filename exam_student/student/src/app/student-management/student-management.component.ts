@@ -10,20 +10,20 @@ import {StudentServiceService} from "../service/student-service.service";
 })
 export class StudentManagementComponent implements OnInit {
 
-  constructor(private studentService: StudentServiceService) {
+  studentList: IStudent[];
+  // detailStudent: IStudent | undefined;
 
+  constructor(private studentService: StudentServiceService) { }
+
+  ngOnInit() {
+    this.studentService.getAll().subscribe(
+      (data: IStudent[]) => {
+        this.studentList = data;
+      }
+    )
   }
 
-  ngOnInit(): void {
-
-  }
-
-  studentList :IStudent[] = StudentInfo.getAllStudent();
-  temp: IStudent = {};
-
-
-  create(stu: IStudent) {
-    this.studentList.push(stu);
-  }
-
+  // changeStudent (student: IStudent) {
+  //   this.detailStudent = student;
+  // }
 }

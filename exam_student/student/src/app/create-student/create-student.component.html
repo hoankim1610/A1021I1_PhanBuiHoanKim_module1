@@ -1,82 +1,71 @@
-<!--<p class="align-content-center"><h2>Create Student</h2>-->
-<!--<br>-->
-<!--<div class="container-fluid">-->
-<!--  <div class="col-6">-->
-<!--    <form [formGroup]="studentForm" (ngSubmit)="addStudent()">-->
-<!--      -->
-<!--      <div class="form-group">-->
-<!--        <label>Id:</label>-->
-<!--        <input class="form-control" formControlName="id">-->
-<!--      </div>-->
-<!--      <div class="alert alert-danger" role="alert"-->
-<!--      *ngIf="studentForm.get('id')?.invalid && studentForm.get('id')?.dirty">-->
-<!--      </div>-->
-<!--      -->
-<!--      <div class="form-group">-->
-<!--        <label>Name:</label>-->
-<!--        <input class="form-control" formControlName="name">-->
-<!--      </div>-->
-<!--      <div class="alert alert-danger" role="alert"-->
-<!--           *ngIf="studentForm.get('name')?.invalid && studentForm.get('name')?.dirty">-->
-<!--      </div>-->
-<!--      -->
-<!--      <div class="form-group">-->
-<!--        <label>Address:</label>-->
-<!--        <input class="form-control" formControlName="address">-->
-<!--      </div>-->
-<!--      <div class="alert alert-danger" role="alert"-->
-<!--           *ngIf="studentForm.get('address')?.invalid && studentForm.get('address')?.dirty">-->
-<!--      </div>-->
-<!--      -->
-<!--      <div class="form-group">-->
-<!--        <label>Phone:</label>-->
-<!--        <input class="form-control" formControlName="phone">-->
-<!--      </div>-->
-<!--      -->
-<!--      <div class="form-group">-->
-<!--        <label>Email:</label>-->
-<!--        <input class="form-control" formControlName="email">-->
-<!--      </div>-->
-<!--      -->
-<!--      <div class="form-group">-->
-<!--        <label>Mark:</label>-->
-<!--        <input class="form-control" formControlName="mark">-->
-<!--      </div>-->
-<!--      <-->
-<!--    </form>-->
-<!--  </div>-->
-<!--</div>-->
-
-
-<label>Avatar</label>
-<input #avatar>
+<p class="align-content-center"><h2>Create Student</h2>
 <br>
+<div class="container-fluid">
+  <div class="col-6">
+    <form [formGroup]="studentForm" (ngSubmit)="submit()">
 
-<label>Id</label>
-<input #id>
-<br>
+<!--      Id-->
+      <div class="form-group">
+        <label>Id:</label>
+        <input class="form-control" formControlName="id">
+      </div>
+      <div class="alert alert-danger" role="alert"
+      *ngIf="studentForm.get('id')?.invalid && studentForm.get('id')?.dirty">
+        Id is required.
+      </div>
 
-<label>Name</label>
-<input #name>
-<br>
+<!--      Name-->
+      <div class="form-group">
+        <label>Name:</label>
+        <input class="form-control" formControlName="name">
+      </div>
+      <div class="alert alert-danger" role="alert"
+           *ngIf="studentForm.get('name')?.invalid && studentForm.get('name')?.dirty">
+        Name is invalid.
+      </div>
 
-<label>Address</label>
-<input #address>
-<br>
+<!--      Address-->
+      <div class="form-group">
+        <label>Address:</label>
+        <input class="form-control" formControlName="address">
+      </div>
+      <div class="alert alert-danger" role="alert"
+           *ngIf="studentForm.get('address')?.invalid && studentForm.get('address')?.dirty">
+      </div>
 
-<label>Phone</label>
-<input #phone>
-<br>
+<!--      Phone-->
+      <div class="form-group">
+        <label>Phone:</label>
+        <input class="form-control" formControlName="phone">
+      </div>
+      <div class="alert alert-danger" role="alert"
+           *ngIf="studentForm.get('phone')?.invalid && studentForm.get('phone')?.dirty">
+        Phone is invalid.
+      </div>
 
-<label>Email</label>
-<input #email>
-<br>
+<!--      Email-->
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" class="form-control" formControlName="email">
+      </div>
+      <div class="alert alert-danger" role="alert"
+           *ngIf="studentForm.get('email')?.invalid && studentForm.get('email')?.dirty">
+      </div>
 
-<label>Mark</label>
-<input #mark>
-<br>
-<button (click)="addStudent(avatar.value, id.value, name.value, address.value, phone.value, email.value, mark.value)">
-  Create
-</button>
+<!--      Mark-->
+      <div class="form-group">
+        <label>Mark:</label>
+        <input class="form-control" formControlName="mark">
+      </div>
+      <div class="alert alert-danger" role="alert"
+           *ngIf="studentForm.get('mark')?.invalid && studentForm.get('mark')?.dirty">
+      </div>
+
+      <button style="background-color:#7abaff" class="btn btn-info mb-lg-3" type="submit" value="Create" [disabled]="!studentForm.valid">Create</button>
+
+    </form>
+  </div>
+</div>
+
 
 
