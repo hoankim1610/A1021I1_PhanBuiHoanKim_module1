@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row mt-5 mb-2 justify-content-center">
+    <h3>Create Customer</h3>
+  </div>
+  <form>
+    <div>
+      <form [formGroup]="customerForm" (ngSubmit)="editNew()">
+        <div class="form-group">
+          <label>Customer Name</label>
+          <input class="form-control" name="name" formControlName="name">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('name')?.invalid && customerForm.get('name')?.dirty">
+          Name is invalid.
+        </div>
+        <div class="form-group">
+          <label>Customer Code</label>
+          <input class="form-control" name="code" formControlName="code">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('code')?.invalid && customerForm.get('code')?.dirty">
+          Name is invalid.
+        </div>
+        <div class="form-group">
+          <label>Customer Type</label>
+          <input class="form-control" name="type" formControlName="type">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('type')?.invalid && customerForm.get('type')?.dirty">
+          Name is invalid.
+        </div>
+        <div class="form-group">
+          <label>Birthday</label>
+          <input class="form-control" name="birthday" formControlName="birthday">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('birthday')?.invalid && customerForm.get('birthday')?.dirty">
+          Name is invalid.
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <select class="form-control" name="sex" formControlName="sex">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('sex')?.invalid && customerForm.get('sex')?.dirty">
+          Name is invalid.
+        </div>
+        <div class="form-group">
+          <label>ID Card</label>
+          <input class="form-control" name="idCard" formControlName="idCard">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('idCard')?.invalid && customerForm.get('idCard')?.dirty">
+          Name is invalid.
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input class="form-control" name="phone" formControlName="phone">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('phone')?.invalid && customerForm.get('phone')?.dirty">
+          Name is invalid.
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input class="form-control" name="email" formControlName="email">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('email')?.invalid && customerForm.get('email')?.dirty">
+          Name is invalid.
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input class="form-control" name="address" formControlName="address">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('address')?.invalid && customerForm.get('address')?.dirty">
+          Name is invalid.
+        </div>
+        <button class="btn btn-outline-success" type="submit" style="width: 100%">Save</button>
+      </form>
+    </div>
+  </form>
+</div>

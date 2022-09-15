@@ -1,3 +1,40 @@
-<table>
-  <tr *ngFor="let prod of products | paginate"></tr>
+<h2>Product List</h2>
+<a routerLink="create" class="btn btn-info m-3" type="button">Create</a>
+<div class="form-inline">
+  <input class="form-control mr-sm-2" type="search" [(ngModel)]="nameSearch">
+  <input class="form-control mr-sm-2" type="search" [(ngModel)]="nameTypeSearch">
+  <button class="btn btn-outline-secondary" type="submit" (click)="searchByName()">Search</button>
+</div>
+<table class="table">
+  <thead class="table table-striped table-hover table-bordered">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Name</th>
+    <th scope="col">Price</th>
+    <th scope="col">Status</th>
+    <th scope="col">Quantity</th>
+    <th scope="col">Category</th>
+    <th scope="col">Action</th>
+  </tr>
+  <tr *ngFor="let prod of products | paginate: { itemsPerPage: 3, currentPage: p }; index as i">
+    <td scope="row">{{prod.id}}</td>
+    <td scope="row">{{prod.name | titlecase}}</td>
+    <td scope="row">{{prod.price}}</td>
+    <td scope="row">{{prod.status}}</td>
+    <td scope="row">{{prod.quantity}}</td>
+    <td scope="row">{{prod.category.name}}</td>
+    <td>
+      <a (click)="openDialogDelete(prod.id)" style="background-color: #6f42c1; color: azure" scope="row" type="button" class="btn m-lg-1">
+        Delete
+      </a>
+      <a style="background-color: #b21f2d; color: azure" type="button" class="btn m-lg-3" routerLink="edit/{{prod.id}}">Edit</a>
+    </td>
+  </tr>
+  </thead>
 </table>
+
+<!--pagination-->
+<pagination-controls class="pagination justify-content-center" (pageChange)="p = $event"></pagination-controls>
+<!--pagination-->
+
+

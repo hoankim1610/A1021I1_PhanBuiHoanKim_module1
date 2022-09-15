@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {ProductServiceService} from "../service/product-service.service";
-import {Router} from "@angular/router";
-import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
-import {MatSnackBar} from "@angular/material/snack-bar";
+import {ProductServiceService} from '../service/product-service.service';
+import {Router} from '@angular/router';
+import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-product-create',
@@ -14,7 +14,7 @@ export class ProductCreateComponent implements OnInit {
 
   constructor(private productService: ProductServiceService,
               private router: Router,
-              private snackBar : MatSnackBar) {
+              private snackBar: MatSnackBar) {
   }
 
   ngOnInit(): void {
@@ -24,16 +24,16 @@ export class ProductCreateComponent implements OnInit {
       price: new FormControl('', [Validators.required]),
       status: new FormControl('', [Validators.required]),
       quantity: new FormControl('', [Validators.required]),
-    })
+    });
   }
 
   add() {
     this.productService.create(this.productForm.value).subscribe(
       (res) => {
-        this.router.navigateByUrl("");
-        this.snackBar.open("Create successfully!", "ok");
+        this.router.navigateByUrl('');
+        this.snackBar.open('Create successfully!', 'ok');
       }
-    )
+    );
   }
 
 }

@@ -1,0 +1,141 @@
+{
+  "facilities": [
+    {
+      "id": 1,
+      "name": "Natural Villa",
+      "area": "456",
+      "cost": "4000000",
+      "max": "5",
+      "rental": "ff",
+      "facility": "vip",
+      "standard": "vip",
+      "pool": "4",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas_Bedroom-1.jpg"
+    },
+    {
+      "serviceType": {
+        "id": 1,
+        "name": "Villa"
+      },
+      "standardRoom": "Vip",
+      "poolArea": 6,
+      "floor": 2,
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "Dream House",
+      "area": "456",
+      "cost": "500000",
+      "max": 5,
+      "rental": "ff",
+      "facility": "vip",
+      "standard": "vip",
+      "pool": "4",
+      "floor": "3"
+    },
+    {
+      "serviceType": {
+        "id": 2,
+        "name": "House"
+      },
+      "standardRoom": "Vip",
+      "poolArea": 2,
+      "floor": 5,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas-_Exterior-1-F.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Vintage Room",
+      "area": "567",
+      "cost": 3900000,
+      "max": "7",
+      "rental": "Year",
+      "facilityType": {
+        "id": 3,
+        "name": "Room"
+      },
+      "standard": "vip",
+      "pool": "5",
+      "floor": "3",
+      "image": "https://cdn1.ivivu.com/iVivu/2022/03/03/18/154610241-800x450.jpg"
+    },
+    {
+      "id": 4,
+      "name": "hhhhhhhh",
+      "area": "345",
+      "cost": 455555,
+      "max": "6",
+      "rental": "hh",
+      "facilityType": {
+        "id": 2,
+        "name": "House"
+      },
+      "standard": "vip",
+      "pool": "4",
+      "floor": "2",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Villas_Beach_Pool_Villas_Kitchen-Area.jpg"
+    }
+  ],
+  "serviceType": [
+    {
+      "id": 1,
+      "name": "Villa"
+    },
+    {
+      "id": 2,
+      "name": "House"
+    },
+    {
+      "id": 3,
+      "name": "Room"
+    }
+  ],
+  "customer": [
+    {
+      "id": 2,
+      "name": "Lena",
+      "code": "Local_3",
+      "type": "Local",
+      "birthday": "1998/09/27",
+      "sex": "Female",
+      "IDCard": 333445555,
+      "phone": "09847474747",
+      "email": "Lena3@gmail.com",
+      "address": "987B Celina Hokaii Afghanistan"
+    },
+    {
+      "id": 3,
+      "name": "Phan Bùi Hoàn Kim",
+      "code": "KH555",
+      "type": "ii",
+      "birthday": "2022-09-09",
+      "sex": "Male",
+      "idCard": "hhh_2",
+      "phone": "9777564837",
+      "email": "411210261@gmail.com",
+      "address": "411210261@sv.ufl.udn.vn"
+    }
+  ],
+  "contracts": [
+    {
+      "id": 1,
+      "customer": {
+        "id": 2,
+        "name": "Lena",
+        "code": "Local_3",
+        "type": "Local",
+        "birthday": "1998/09/27",
+        "sex": "Female",
+        "IDCard": 333445555,
+        "phone": "09847474747",
+        "email": "Lena3@gmail.com",
+        "address": "987B Celina Hokaii Afghanistan"
+      },
+      "start": "2021/09/13",
+      "end": "2022/04/27,",
+      "deposit": 50000000,
+      "total": 70000000
+    }
+  ]
+}

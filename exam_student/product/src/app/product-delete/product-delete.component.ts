@@ -26,7 +26,7 @@ export class ProductDeleteComponent implements OnInit {
   }
 
   delete() {
-    this.productService.findById(this.idD).subscribe(
+    this.productService.delete(this.idD).subscribe(
       (data) => {
         console.log('Success');
         this.dialogRef.close();

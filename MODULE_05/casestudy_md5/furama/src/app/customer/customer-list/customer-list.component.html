@@ -1,0 +1,46 @@
+<div class="row mt-5 mb-2 justify-content-center" style="color: seagreen">
+  <h1>Customer Profile</h1>
+</div>
+<div class="container">
+<a [routerLink]="['/customer/customer-create']" class="btn m-3" type="button">Create</a>
+<div class="form-inline">
+  <input class="form-control mr-sm-2" type="search" [(ngModel)]="nameSearch">
+<!--  <input class="form-control mr-sm-2" type="search" [(ngModel)]="nameTypeSearch">-->
+  <button class="btn" type="submit" (click)="searchByName()">Search</button>
+</div>
+</div>
+<br>
+<table class="table container-fluid table-hover table-bordered" style="width: 100%">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Customer</th>
+    <th scope="col">Code</th>
+    <th scope="col">Type</th>
+    <th scope="col">Birthday</th>
+    <th scope="col">Sex</th>
+    <th scope="col">ID Card</th>
+    <th scope="col">Phone number</th>
+    <th scope="col">Email</th>
+    <th scope="col">Address</th>
+    <th scope="col">Action</th>
+  </tr>
+  <tr *ngFor="let cus of customers">
+    <td scope="row">{{cus.id}}</td>
+    <td scope="row">{{cus.name}}</td>
+    <td scope="row">{{cus.code}}</td>
+    <td scope="row">{{cus.type}}</td>
+    <td scope="row">{{cus.birthday | date: 'dd/MM/yyyy'}}</td>
+    <td scope="row">{{cus.sex}}</td>
+    <td scope="row">{{cus.idCard}}</td>
+    <td scope="row">{{cus.phone}}</td>
+    <td scope="row">{{cus.email}}</td>
+    <td scope="row">{{cus.address}}</td>
+    <td>
+      <a (click)="openDialogDelete(cus.id)" routerLink="/customer/customer-delete" scope="row" type="button" class="btn m-lg-2">
+        Delete
+      </a>
+      <a routerLink="/customer/customer-edit/{{cus.id}}" href="#" scope="row" type="button" class="btn m-lg-2">Edit</a>
+    </td>
+  </tr>
+</table>
+

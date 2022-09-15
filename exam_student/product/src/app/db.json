@@ -1,17 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "IPhone X",
-      "price": 300000,
-      "status": "100%",
-      "quantity": "10",
-      "category": {
-        "id": 3,
-        "name": "Television"
-      }
-    },
-    {
       "id": 2,
       "name": "Samsung Galaxy X7",
       "price": 300000,
@@ -153,14 +142,6 @@
         "id": 2,
         "name": "Fridge"
       }
-    },
-    {
-      "id": 16,
-      "name": "",
-      "price": "",
-      "status": "",
-      "quantity": "",
-      "category": ""
     }
   ],
   "category": [

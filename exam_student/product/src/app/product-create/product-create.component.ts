@@ -49,11 +49,6 @@ export class ProductCreateComponent implements OnInit {
       this.router.navigateByUrl("");
       this.snackBar.open("Create successfully!", "ok");
     })
-    // this.productService.create(this.productForm.value).subscribe(
-    //   (res) => {
-    //     this.router.navigateByUrl("");
-        // this.snackBar.open("Create successfully!", "ok");
-    //   })
   }
 
   getCategory() {

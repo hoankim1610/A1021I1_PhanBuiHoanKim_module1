@@ -1,0 +1,38 @@
+<div class="row mt-5 mb-2 justify-content-center" style="color: seagreen">
+  <h1>Contracts</h1>
+</div>
+<div class="container">
+  <a [routerLink]="['/contracts/contract-create']" class="btn m-3" type="button">Create</a>
+  <div class="form-inline">
+    <input class="form-control mr-sm-2" type="search" [(ngModel)]="nameSearch">
+    <!--  <input class="form-control mr-sm-2" type="search" [(ngModel)]="nameTypeSearch">-->
+    <button class="btn" type="submit" (click)="searchByName()">Search</button>
+  </div>
+</div>
+<br>
+<table class="table container-fluid table-hover table-bordered" style="width: 100%">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Customer</th>
+    <th scope="col">Start Day</th>
+    <th scope="col">End Day</th>
+    <th scope="col">Deposit</th>
+    <th scope="col">Total</th>
+    <th scope="col">Action</th>
+  </tr>
+  <tr *ngFor="let cont of contracts">
+    <td scope="row">{{cont.id}}</td>
+    <td scope="row">{{cont.customer.name}}</td>
+    <td scope="row">{{cont.start}}</td>
+    <td scope="row">{{cont.end}}</td>
+    <td scope="row">{{cont.deposit}}</td>
+    <td scope="row">{{cont.total}}</td>
+    <td>
+      <a (click)="openDialogDelete(cont.id)" routerLink="/contracts/contract-delete" scope="row" type="button" class="btn m-lg-2">
+        Delete
+      </a>
+      <a routerLink="/contracts/contract-edit/{{cont.id}}" href="#" scope="row" type="button" class="btn m-lg-2">Edit</a>
+    </td>
+  </tr>
+</table>
+

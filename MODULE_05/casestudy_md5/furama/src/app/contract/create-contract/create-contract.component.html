@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row mt-5 mb-2 justify-content-center">
+    <h3>Create Contract</h3>
+  </div>
+  <form>
+    <div>
+      <form [formGroup]="contractForm" (ngSubmit)="add()">
+        <div class="form-group">
+          <label>Customer</label>
+          <select name="name" formControlName="name" class="form-control" id="customer" formControlName="customer">
+            <option *ngFor ="let customer of customers" [ngValue] = "customer">{{customer.name}}</option>
+          </select>
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="contractForm.get('name')?.invalid && contractForm.get('name')?.dirty">
+          Name is invalid.
+        </div>
+
+        <div class="form-group">
+          <label>Start Day</label>
+          <input type="date" class="form-control" name="start" formControlName="start">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="contractForm.get('start')?.invalid && contractForm.get('start')?.dirty">
+          Day is invalid.
+        </div>
+
+
+        <div class="form-group">
+          <label>End Day</label>
+          <input type="date" class="form-control" name="end" formControlName="end">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="contractForm.get('end')?.invalid && contractForm.get('end')?.dirty">
+          Day is invalid.
+        </div>
+
+        <div class="form-group">
+          <label>Deposit</label>
+          <input type="text" class="form-control" name="deposit" formControlName="deposit">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="contractForm.get('deposit')?.invalid && contractForm.get('deposit')?.dirty">
+          Deposit is invalid.
+        </div>
+
+        <div class="form-group">
+          <label>Total</label>
+          <input class="form-control" name="total" formControlName="total">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="contractForm.get('total')?.invalid && contractForm.get('total')?.dirty">
+          Total is invalid.
+        </div>
+
+        <button class="btn btn-outline-success" type="submit" style="width: 100%">Save</button>
+      </form>
+    </div>
+  </form>
+</div>

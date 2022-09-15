@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {ProductServiceService} from "../service/product-service.service";
 import {MatDialog} from "@angular/material/dialog";
 import {ProductDeleteComponent} from "../product-delete/product-delete.component";
-import {Product} from "../data/Product";
 import {CategoryServiceService} from "../service/category-service.service";
 
 @Component({
@@ -12,7 +11,7 @@ import {CategoryServiceService} from "../service/category-service.service";
 })
 export class ProductListComponent implements OnInit {
 
-  products : any = [];
+  products: any = [];
   nameSearch: string;
 
   categories: any = [];
@@ -50,7 +49,7 @@ export class ProductListComponent implements OnInit {
 
   searchByType() {
     this.categoryService.findByType(this.nameSearch).subscribe((data) => {
-      this.products = data;
+      this.categories = data;
     })
   }
 

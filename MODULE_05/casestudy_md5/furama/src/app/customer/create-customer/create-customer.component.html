@@ -1,0 +1,105 @@
+<div class="container">
+  <div class="row mt-5 mb-2 justify-content-center">
+    <h3>Create Customer</h3>
+  </div>
+  <form>
+    <div>
+      <form [formGroup]="customerForm" (ngSubmit)="add()">
+        <div class="form-group">
+          <label>Customer Name</label>
+          <input class="form-control" name="name" formControlName="name">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('name')?.invalid && customerForm.get('name')?.dirty">
+          Name is invalid.
+        </div>
+
+        <div class="form-group">
+          <label>Customer Code</label>
+          <input class="form-control" name="code" formControlName="code">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('code')?.invalid && customerForm.get('code')?.dirty">
+          Code is invalid. Code Length < 5 & > 3
+        </div>
+
+
+        <div class="form-group">
+          <label>Customer Type</label>
+          <input class="form-control" name="type" formControlName="type">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('type')?.invalid && customerForm.get('type')?.dirty">
+          Type is invalid.
+        </div>
+
+        <div class="form-group">
+          <label>Birthday</label>
+          <input type="date" class="form-control" name="birthday" formControlName="birthday">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('birthday')?.invalid && customerForm.get('birthday')?.dirty">
+          Birthday is invalid.
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select class="form-control" name="sex" formControlName="sex">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('sex')?.invalid && customerForm.get('sex')?.dirty">
+          Gender is invalid.
+        </div>
+
+
+        <div class="form-group">
+          <label>ID Card</label>
+          <input class="form-control" name="idCard" formControlName="idCard">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('idCard')?.invalid && customerForm.get('idCard')?.dirty">
+          ID Card is invalid.
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input class="form-control" name="phone" formControlName="phone">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('phone')?.invalid && customerForm.get('phone')?.dirty">
+          Phone is invalid.
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input class="form-control" name="email" formControlName="email">
+          <div class="alert alert-danger" role="alert"
+               *ngIf="customerForm.get('email')?.invalid && customerForm.get('email')?.dirty">
+            <div [hidden]="!customerForm.get('email').errors.required">
+              Email is invalid.
+            </div>
+          </div>
+          <div class="alert alert-danger" role="alert"
+               *ngIf="customerForm.get('email')?.invalid && customerForm.get('email')?.dirty">
+            <div [hidden]="!customerForm.get('email').errors.pattern">
+              Email is not right.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Address</label>
+          <input class="form-control" name="address" formControlName="address">
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="customerForm.get('address')?.invalid && customerForm.get('address')?.dirty">
+          Name is invalid.
+        </div>
+        <button class="btn btn-outline-success" type="submit" style="width: 100%">Save</button>
+      </form>
+    </div>
+  </form>
+</div>

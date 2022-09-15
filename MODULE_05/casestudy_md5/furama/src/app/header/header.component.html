@@ -8,7 +8,7 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Customer</a>
+          <a routerLink="customer/customer-list" class="nav-link" href="#">Customer</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbar" role="button"
@@ -17,15 +17,15 @@
             Service
           </a>
           <div class="dropdown-menu" style="background-color: black">
-            <a class="dropdown-item" href="#">Villa</a>
-            <a class="dropdown-item" href="#">House</a>
-            <a class="dropdown-item" href="#">Room</a>
+            <a routerLink="facilities/facility-list" class="dropdown-item" href="#">Villa</a>
+            <a routerLink="facilities/facility-list" class="dropdown-item" href="#">House</a>
+            <a routerLink="facilities/facility-list" class="dropdown-item" href="#">Room</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Others</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Employee</a>
+          <a routerLink="employees/employee-list" class="nav-link" href="#">Employee</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -34,7 +34,7 @@
             Contract
           </a>
           <div class="dropdown-menu" style="background-color: black" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Contract detail</a>
+            <a routerLink="contracts/contract-list" class="dropdown-item" href="#">Contract detail</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Others</a>

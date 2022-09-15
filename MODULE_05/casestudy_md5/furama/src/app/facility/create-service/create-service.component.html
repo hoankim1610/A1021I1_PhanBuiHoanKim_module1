@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row mt-5 mb-2 justify-content-center">
+    <h3>Edit Service</h3>
+  </div>
+  <form>
+    <div>
+      <form [formGroup]="facilitiesForm" (ngSubmit)="add()">
+        <div class="form-group">
+          <label>Service Name</label>
+          <input type="text" class="form-control" formControlName="name">
+        </div>
+
+        <div class="form-group">
+          <label>Area</label>
+          <input type="text" class="form-control" formControlName="area">
+        </div>
+
+        <div class="form-group">
+          <label>Cost</label>
+          <input type="number" clas s="form-control" formControlName="cost">
+        </div>
+
+        <div class="form-group">
+          <label>Max People</label>
+          <input type="text" class="form-control" formControlName="max">
+        </div>
+
+        <div class="form-group">
+          <label>Rental Type</label>
+          <select class="custom-select" class="form-control" formControlName="rental">
+            <option value="" selected>Rental Type</option>
+            <option>Day</option>
+            <option>Month</option>
+            <option>Year</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Facility Type</label>
+          <select class="form-control" formControlName="facilityType">
+            <option *ngFor ="let facs of facilitiesType" [ngValue] = "facs">{{facs.name}}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Standard Room</label>
+          <input type="text" class="form-control" formControlName="standard">
+        </div>
+
+        <div class="form-group">
+          <label>Pool Area</label>
+          <input type="text" class="form-control" formControlName="pool">
+        </div>
+
+        <div class="form-group">
+          <label>Floor</label>
+          <input type="text" class="form-control" formControlName="floor">
+        </div>
+
+        <div class="form-group">
+          <label>Service Photo</label>
+          <input type="text" class="form-control" formControlName="image">
+        </div>
+
+        <button class="btn btn-outline-success" type="submit" style="width: 100%">Save</button>
+      </form>
+    </div>
+  </form>
+</div>
+

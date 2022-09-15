@@ -1,0 +1,165 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Toshiba 5.0.0",
+      "price": "25000",
+      "status": "99%",
+      "quantity": "500",
+      "category": {
+        "id": 2,
+        "name": "Fridge"
+      }
+    },
+    {
+      "id": 4,
+      "name": "LG Lnx",
+      "price": "40000",
+      "status": "old",
+      "quantity": "30",
+      "category": {
+        "id": 3,
+        "name": "Television"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Máy giặt cửa ngang Samsung",
+      "price": "60000",
+      "status": "60",
+      "quantity": "",
+      "category": {
+        "id": 4,
+        "name": "Washing"
+      }
+    },
+    {
+      "id": 7,
+      "name": "iPhone 11",
+      "price": "600000",
+      "status": "40",
+      "quantity": "60",
+      "category": {
+        "id": 1,
+        "name": "Phone"
+      }
+    },
+    {
+      "id": 8,
+      "name": "iPhone 13",
+      "price": "200000",
+      "status": "30",
+      "quantity": "100",
+      "category": {
+        "id": 1,
+        "name": "Phone"
+      }
+    },
+    {
+      "id": 9,
+      "name": "son",
+      "price": "400000",
+      "status": "new",
+      "quantity": "80%",
+      "category": {
+        "id": 4,
+        "name": "Washing"
+      }
+    },
+    {
+      "id": 10,
+      "name": "iPhone 11 pro",
+      "price": "500000",
+      "status": "80%",
+      "quantity": "50",
+      "category": {
+        "id": 1,
+        "name": "Phone"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Samsung 40 inch",
+      "price": "500000",
+      "status": "80%",
+      "quantity": "50",
+      "category": {
+        "id": 3,
+        "name": "Television"
+      }
+    },
+    {
+      "id": 12,
+      "name": "LG 52 inch",
+      "price": "30000",
+      "status": "new",
+      "quantity": "30",
+      "category": {
+        "id": 3,
+        "name": "Television"
+      }
+    },
+    {
+      "id": 13,
+      "name": "LG 52 inch",
+      "price": "400000",
+      "quantity": "50",
+      "status": "99%",
+      "category": {
+        "id": 3,
+        "name": "Television"
+      }
+    },
+    {
+      "id": 14,
+      "name": "LG",
+      "price": "300000",
+      "status": "ojjojo",
+      "quantity": "50",
+      "category": {
+        "id": 3,
+        "name": "Television"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Máy giặt cửa ngang Samsung",
+      "price": "50000",
+      "status": "old",
+      "quantity": "40",
+      "category": {
+        "id": 2,
+        "name": "Fridge"
+      }
+    },
+    {
+      "id": 16,
+      "name": "LG 52 inch",
+      "price": "7000000",
+      "status": "hhhh",
+      "quantity": "60",
+      "category": {
+        "id": 3,
+        "name": "Television"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Phone"
+    },
+    {
+      "id": 2,
+      "name": "Fridge"
+    },
+    {
+      "id": 3,
+      "name": "Television"
+    },
+    {
+      "id": 4,
+      "name": "Washing"
+    }
+  ]
+}

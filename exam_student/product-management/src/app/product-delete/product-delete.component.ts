@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {ProductServiceService} from "../service/product-service.service";
-import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
@@ -25,7 +25,7 @@ export class ProductDeleteComponent implements OnInit {
   }
 
   delete() {
-    this.productService.findById(this.idD).subscribe(
+    this.productService.delete(this.idD).subscribe(
       (data) => {
         console.log('Success');
         this.dialogRef.close();
