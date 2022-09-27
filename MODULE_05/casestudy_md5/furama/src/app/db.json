@@ -99,22 +99,22 @@
       "type": "Local",
       "birthday": "1998/09/27",
       "sex": "Female",
-      "IDCard": 333445555,
+      "IDCard": "kkk_44",
       "phone": "09847474747",
       "email": "Lena3@gmail.com",
       "address": "987B Celina Hokaii Afghanistan"
     },
     {
       "id": 3,
-      "name": "Phan Bùi Hoàn Kim",
-      "code": "KH555",
-      "type": "ii",
-      "birthday": "2022-09-09",
+      "name": "John Evan",
+      "code": "5555",
+      "type": "vip",
+      "birthday": "2022-09-17",
       "sex": "Male",
       "idCard": "hhh_2",
       "phone": "9777564837",
-      "email": "411210261@gmail.com",
-      "address": "411210261@sv.ufl.udn.vn"
+      "email": "john3@gmail.com",
+      "address": "Utihl, Bortom, America"
     }
   ],
   "contracts": [
@@ -132,10 +132,10 @@
         "email": "Lena3@gmail.com",
         "address": "987B Celina Hokaii Afghanistan"
       },
-      "start": "2021/09/13",
-      "end": "2022/04/27,",
-      "deposit": 50000000,
-      "total": 70000000
+      "start": "2022-09-16",
+      "end": "2022-09-20",
+      "deposit": "5000000000",
+      "total": "7000000000"
     }
   ]
 }

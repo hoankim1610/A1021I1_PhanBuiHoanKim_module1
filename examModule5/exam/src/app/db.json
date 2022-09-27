@@ -1,165 +1,138 @@
 {
-  "products": [
+  "student": [
+    {
+      "id": 2,
+      "name": "Lily",
+      "group": "Group 2",
+      "topic": "890",
+      "instructor": {
+        "id": 2,
+        "name": "Kevin"
+      },
+      "email": "lily@def.com",
+      "phone": "0129383838"
+    },
     {
       "id": 3,
-      "name": "Toshiba 5.0.0",
-      "price": "25000",
-      "status": "99%",
-      "quantity": "500",
-      "category": {
-        "id": 2,
-        "name": "Fridge"
-      }
+      "name": "Marie",
+      "group": "Group 3",
+      "topic": "xyz",
+      "instructor": {
+        "id": 3,
+        "name": "Peter"
+      },
+      "email": "maria@def.com",
+      "phone": "08488884748"
     },
     {
       "id": 4,
-      "name": "LG Lnx",
-      "price": "40000",
-      "status": "old",
-      "quantity": "30",
-      "category": {
+      "name": "Max",
+      "group": "Group 2",
+      "topic": "abc",
+      "instructor": {
         "id": 3,
-        "name": "Television"
-      }
+        "name": "Peter"
+      },
+      "email": "max@def.com",
+      "phone": "0495847373"
+    },
+    {
+      "id": 5,
+      "name": "Matoom",
+      "group": "Group 2",
+      "topic": "ghhhh",
+      "instructor": {
+        "id": 2,
+        "name": "Kevin"
+      },
+      "email": "abc@def.com",
+      "phone": "0938383838"
     },
     {
       "id": 6,
-      "name": "Máy giặt cửa ngang Samsung",
-      "price": "60000",
-      "status": "60",
-      "quantity": "",
-      "category": {
-        "id": 4,
-        "name": "Washing"
-      }
+      "name": "MMMm",
+      "group": "Group 3",
+      "topic": 457,
+      "instructor": {
+        "id": 3,
+        "name": "Peter"
+      },
+      "email": "ddd@def.com",
+      "phone": "0999999999"
     },
     {
       "id": 7,
-      "name": "iPhone 11",
-      "price": "600000",
-      "status": "40",
-      "quantity": "60",
-      "category": {
-        "id": 1,
-        "name": "Phone"
-      }
+      "name": "ffhhffh",
+      "group": "jjjjj",
+      "topic": "345",
+      "instructor": {
+        "id": 2,
+        "name": "Kevin"
+      },
+      "email": "sss@def.com",
+      "phone": "09999999"
     },
     {
       "id": 8,
-      "name": "iPhone 13",
-      "price": "200000",
-      "status": "30",
-      "quantity": "100",
-      "category": {
-        "id": 1,
-        "name": "Phone"
-      }
+      "name": "rrrrrrrr",
+      "group": "rrrrr",
+      "topic": "45667",
+      "instructor": {
+        "id": 2,
+        "name": "Kevin"
+      },
+      "email": "sss@def.com",
+      "phone": "055555555"
     },
     {
       "id": 9,
-      "name": "son",
-      "price": "400000",
-      "status": "new",
-      "quantity": "80%",
-      "category": {
-        "id": 4,
-        "name": "Washing"
-      }
+      "name": "ruhturhtrg",
+      "group": "fsjifj",
+      "topic": "sdkf",
+      "instructor": {
+        "id": 2,
+        "name": "Kevin"
+      },
+      "email": "sas@def.com",
+      "phone": "059599595"
     },
     {
       "id": 10,
-      "name": "iPhone 11 pro",
-      "price": "500000",
-      "status": "80%",
-      "quantity": "50",
-      "category": {
-        "id": 1,
-        "name": "Phone"
-      }
+      "name": "ryeuyruery",
+      "group": "erueu",
+      "topic": "4577",
+      "instructor": {
+        "id": 3,
+        "name": "Peter"
+      },
+      "email": "ddd@def.com",
+      "phone": "047478743783"
     },
     {
       "id": 11,
-      "name": "Samsung 40 inch",
-      "price": "500000",
-      "status": "80%",
-      "quantity": "50",
-      "category": {
-        "id": 3,
-        "name": "Television"
-      }
-    },
-    {
-      "id": 12,
-      "name": "LG 52 inch",
-      "price": "30000",
-      "status": "new",
-      "quantity": "30",
-      "category": {
-        "id": 3,
-        "name": "Television"
-      }
-    },
-    {
-      "id": 13,
-      "name": "LG 52 inch",
-      "price": "400000",
-      "quantity": "50",
-      "status": "99%",
-      "category": {
-        "id": 3,
-        "name": "Television"
-      }
-    },
-    {
-      "id": 14,
-      "name": "LG",
-      "price": "300000",
-      "status": "ojjojo",
-      "quantity": "50",
-      "category": {
-        "id": 3,
-        "name": "Television"
-      }
-    },
-    {
-      "id": 15,
-      "name": "Máy giặt cửa ngang Samsung",
-      "price": "50000",
-      "status": "old",
-      "quantity": "40",
-      "category": {
+      "name": "Unund",
+      "group": "Group 3",
+      "topic": "888",
+      "instructor": {
         "id": 2,
-        "name": "Fridge"
-      }
-    },
-    {
-      "id": 16,
-      "name": "LG 52 inch",
-      "price": "7000000",
-      "status": "hhhh",
-      "quantity": "60",
-      "category": {
-        "id": 3,
-        "name": "Television"
-      }
+        "name": "Kevin"
+      },
+      "email": "fgg@def.com",
+      "phone": "0985757575"
     }
   ],
-  "category": [
+  "instructor": [
     {
       "id": 1,
-      "name": "Phone"
+      "name": "Lena"
     },
     {
       "id": 2,
-      "name": "Fridge"
+      "name": "Kevin"
     },
     {
       "id": 3,
-      "name": "Television"
-    },
-    {
-      "id": 4,
-      "name": "Washing"
+      "name": "Peter"
     }
   ]
 }

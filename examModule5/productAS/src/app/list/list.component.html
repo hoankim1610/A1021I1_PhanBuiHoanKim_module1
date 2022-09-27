@@ -1,0 +1,65 @@
+<h1 style="text-align: center; margin-top: 50px">Product List</h1>
+<a routerLink="/create" class="btn btn-outline-info m-3" type="button">Create</a>
+
+<table class="table" style="text-align: center; margin-top: 30px">
+  <thead class="table table-striped table-bordered">
+  <tr  style="background-color: darkseagreen">
+    <th scope="col">Code</th>
+    <th scope="col">Name</th>
+    <th scope="col">Price</th>
+    <th scope="col">Status</th>
+    <th scope="col">Category</th>
+    <th scope="col">Action</th>
+  </tr>
+  <tr *ngFor="let prod of products">
+    <td scope="row">{{prod.id}}</td>
+    <td scope="row">{{prod.name}}</td>
+    <td scope="row">{{prod.price}}</td>
+    <td scope="row">{{prod.status}}</td>
+    <td scope="row">{{prod.category.name}}</td>
+    <td>
+      <a style="background-color: #6f42c1; color: azure" type="button" (click)="showDelete(prod)"
+         class="btn my-2 my-sm-0 btn-outline-dark" data-toggle="modal" data-target="#deleteP">
+        Delete
+      </a>
+    </td>
+
+<!--    <td>-->
+      <!--      <a style="background-color: #b21f2d; color: azure" type="button" class="btn m-lg-3" routerLink="edit/{{prod.id}}">Edit</a>-->
+<!--    </td>-->
+
+  </tr>
+  </thead>
+</table>
+
+<!--Modal-->
+<div class="modal fade" id="deleteP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Would you like to delete this product <span style="color: #4f3fff"></span>?
+      </div>
+      <div class="ml-3">
+        <p style="color: red; font-style: italic">This action is not undone! </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a (click)="delete(deleteTemp.id)" type="button" class="btn btn-primary">Drop</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--pagination-->
+<!--<pagination-controls class="pagination justify-content-center" (pageChange)="p = $event"></pagination-controls>-->
+<!--pagination-->
+
+
+

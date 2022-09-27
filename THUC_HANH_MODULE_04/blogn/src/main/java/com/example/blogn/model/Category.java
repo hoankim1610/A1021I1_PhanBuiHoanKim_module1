@@ -1,6 +1,6 @@
 package com.example.blogn.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+//import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -13,7 +13,6 @@ public class Category {
     private int id;
     private String name;
     @OneToMany(mappedBy = "category")
-    @JsonBackReference
     private List<Blogn> blogn;
 
     public Category() {

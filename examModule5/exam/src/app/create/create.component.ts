@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {Category} from "../data/Category";
-import {ProductServiceService} from "../service/product-service.service";
-import {CategoryServiceService} from "../service/category-service.service";
 import {Router} from "@angular/router";
 import {MatSnackBar} from "@angular/material/snack-bar";
-import {Product} from "../data/Product";
+import {Instructor} from "../data/Instructor";
+import {StudentService} from "../service/student.service";
+import {InstructorService} from "../service/instructor.service";
+import {Student} from "../data/Student";
 
 
 @Component({
@@ -15,46 +15,68 @@ import {Product} from "../data/Product";
 })
 export class CreateComponent implements OnInit {
 
-  productForm: FormGroup = new FormGroup({
-    id: new FormControl('', [Validators.required]),
-    name: new FormControl('', [Validators.required]),
-    price: new FormControl('', [Validators.required]),
-    status: new FormControl('', [Validators.required]),
-    quantity: new FormControl('', [Validators.required]),
-    category: new FormControl('', [Validators.required]),
+  studentForm: FormGroup = new FormGroup({
+    id: new FormControl(''),
+    name: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z ]*')]),
+    group: new FormControl('', [Validators.required]),
+    topic: new FormControl('', [Validators.required]),
+    instructor: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required, Validators.pattern('(\\W|^)[\\w.+\\-]*@def\\.com(\\W|$)')]),
+    phone: new FormControl('', [Validators.required]),
   });
 
-  categories: Category[];
-
-  constructor(private productService: ProductServiceService,
-              private categoryService: CategoryServiceService,
-              private router: Router,
-              private snackBar : MatSnackBar) {
+  get name() {
+    return this.studentForm.get('name');
   }
+
+  get group() {
+    return this.studentForm.get('group');
+  }
+
+  get topic() {
+    return this.studentForm.get('topic');
+  }
+
+  get email() {
+    return this.studentForm.get('email');
+  }
+
+  get phone() {
+    return this.studentForm.get('phone');
+  }
+
+  instructor: Instructor[];
+
+  constructor(private studentService: StudentService,
+              private instructorService: InstructorService,
+              private router: Router,
+              private snackBar: MatSnackBar) {
+  }
+
   ngOnInit(): void {
-    this.getCategory();
+    this.getType();
   }
 
   add() {
-    const product: Product = {
-      id: this.productForm.value.name,
-      name: this.productForm.value.name,
-      price: this.productForm.value.price,
-      quantity: this.productForm.value.quantity,
-      status: this.productForm.value.status,
-      category: {
-        id: this.productForm.value.category
-      }
+    const students: Student = {
+      id: this.studentForm.value.id,
+      name: this.studentForm.value.name,
+      group: this.studentForm.value.group,
+      instructor: {
+        id: this.studentForm.value.instructor
+      },
+      email: this.studentForm.value.email,
+      phone: this.studentForm.value.phone
     };
-    this.productService.create(this.productForm.value).subscribe((res) => {
+    this.studentService.create(this.studentForm.value).subscribe((res) => {
       this.router.navigateByUrl("");
       this.snackBar.open("Create successfully!", "ok");
     })
   }
 
-  getCategory() {
-    this.categoryService.getAllType().subscribe((res) => {
-        this.categories = res;
+  getType() {
+    this.instructorService.getAllType().subscribe((res) => {
+        this.instructor = res;
       }
     )
   }

@@ -46,7 +46,7 @@ export class EditCustomerComponent implements OnInit {
   editNew() {
     this.customerService.update(this.active.snapshot.params.id, this.customerForm.value).subscribe(
       (data) => {
-        this.router.navigateByUrl("customer/customer-list");
+        this.router.navigateByUrl("/customer/customer-list");
         this.snackBar.open("Update succesfully!", "ok")
       });
   }

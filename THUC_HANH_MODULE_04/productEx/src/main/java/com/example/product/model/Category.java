@@ -1,20 +1,16 @@
 package com.example.product.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
-@Table(name = "category")
 public class Category {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-
     @OneToMany(mappedBy = "category")
-    @JsonBackReference
     private List<Product> products;
 
     public Category() {

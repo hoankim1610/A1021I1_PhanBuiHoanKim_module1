@@ -1,54 +1,86 @@
-<p class="align-content-center"><h2>Create</h2>
+<h1>Create</h1>
 <br>
 <div class="container-fluid">
   <div class="col-6">
-    <form [formGroup]="productForm" (ngSubmit)="add()">
+    <form [formGroup]="studentForm" (ngSubmit)="add()" novalidate>
 
       <div class="form-group">
         <label>Name:</label>
-        <input class="form-control" name="name" formControlName="name">
+        <input type="text" class="form-control" name="name" formControlName="name">
       </div>
-      <div class="alert alert-danger" role="alert"
-           *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.dirty">
-        Name is invalid.
-      </div>
-
-
-      <div class="form-group">
-        <label>Price:</label>
-        <input class="form-control" formControlName="price">
-      </div>
-      <div class="alert alert-danger" role="alert"
-           *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.dirty">
-        Price is invalid.
+      <div
+        *ngIf="!name?.valid && (name?.dirty ||name?.touched)">
+        <div style="color: #b21f2d" [hidden]="!name.errors.required">
+          Name is required.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!name.errors.pattern">
+          Name must not contain special characters and numbers.
+        </div>
       </div>
 
       <div class="form-group">
-        <label>Quantity:</label>
-        <input class="form-control" formControlName="quantity">
+        <label>Group:</label>
+        <input type="text" class="form-control" name="group" formControlName="group">
       </div>
-      <div class="alert alert-danger" role="alert"
-           *ngIf="productForm.get('quantity')?.invalid && productForm.get('quantity')?.dirty">
-        Input quantity.
-      </div>
-
-      <div class="form-group">
-        <label>Status:</label>
-        <input class="form-control" formControlName="status">
-      </div>
-      <div class="alert alert-danger" role="alert"
-           *ngIf="productForm.get('status')?.invalid && productForm.get('status')?.dirty">
-        Phone is invalid.
+      <div
+        *ngIf="!group?.valid && (group?.dirty ||group?.touched)">
+        <div style="color: #b21f2d" [hidden]="!group.errors.required">
+          Group is required.
+        </div>
       </div>
 
       <div class="form-group">
-        <label>Category</label>
-        <select class="form-control" id="category" formControlName="category">
-          <option *ngFor ="let cate of categories" [ngValue] = "cate">{{cate.name}}</option>
+        <label>Topic:</label>
+        <input type="text" class="form-control" name="topic" formControlName="topic">
+      </div>
+      <div
+        *ngIf="!topic?.valid && (topic?.dirty ||topic?.touched)">
+        <div style="color: #b21f2d" [hidden]="!topic.errors.required">
+          Topic is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Instructor:</label>
+        <select class="form-control" formControlName="instructor">
+          <option *ngFor="let ins of instructor" [ngValue]="ins">{{ins.name}}</option>
         </select>
       </div>
 
-      <button class="btn btn-primary">Create</button>
+
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" class="form-control" name="email" formControlName="email">
+      </div>
+      <div
+        *ngIf="!email?.valid && (email?.dirty ||email?.touched)">
+        <div style="color: #b21f2d" [hidden]="!email.errors.required">
+          Email is required.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!email.errors.pattern">
+          Email is not right form.
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label>Phone: </label>
+        <input type="text" class="form-control" formControlName="phone">
+      </div>
+      <div
+        *ngIf="!phone?.valid && (phone?.dirty ||phone?.touched)">
+        <div style="color: #b21f2d" [hidden]="!phone.errors.required">
+          Phone is required.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!phone.errors.minLength">
+          Phone must be at least 10 character.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!phone.errors.maxLength">
+          Phone must be not exceed 12 character.
+        </div>
+      </div>
+
+      <button class="btn" [disabled]="!studentForm.valid">Create</button>
 
     </form>
   </div>

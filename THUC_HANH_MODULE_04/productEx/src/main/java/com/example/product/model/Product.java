@@ -1,7 +1,5 @@
 package com.example.product.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-
 import javax.persistence.*;
 
 @Entity
@@ -9,20 +7,19 @@ import javax.persistence.*;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private int id;
     private String name;
-    private double price;
+    private int price;
     private String status;
-
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
-    @JsonBackReference
     private Category category;
 
     public Product() {
     }
 
-    public Product(int id, String name, double price, String status, Category category) {
+    public Product(int id, String name, int price, String status, Category category) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -46,11 +43,11 @@ public class Product {
         this.name = name;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -58,7 +55,7 @@ public class Product {
         return status;
     }
 
-    public void setStatus(String quantity) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
@@ -70,3 +67,7 @@ public class Product {
         this.category = category;
     }
 }
+
+
+
+

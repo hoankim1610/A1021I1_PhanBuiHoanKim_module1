@@ -1,0 +1,61 @@
+<h1>Create</h1>
+<br>
+<div class="container-fluid">
+  <div class="col-6">
+    <form [formGroup]="productForm" (ngSubmit)="add()" novalidate>
+
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" class="form-control" name="name" formControlName="name">
+      </div>
+      <div
+        *ngIf="!name?.valid && (name?.dirty ||name?.touched)">
+        <div style="color: #b21f2d" [hidden]="!name.errors.required">
+          Name is required.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!name.errors.pattern">
+          Name must not contain special characters and numbers.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Price:</label>
+        <input type="text" class="form-control" name="price" formControlName="price">
+      </div>
+      <div
+        *ngIf="!price?.valid && (price?.dirty ||price?.touched)">
+        <div style="color: #b21f2d" [hidden]="!price.errors.required">
+          Price is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Status:</label>
+        <input type="text" class="form-control" name="status" formControlName="status">
+      </div>
+      <div
+        *ngIf="!status?.valid && (status?.dirty ||status?.touched)">
+        <div style="color: #b21f2d" [hidden]="!status.errors.required">
+          Status is required.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!status.errors.maxLength">
+          Status must not exceed 5 characters.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Category:</label>
+        <select class="form-control" formControlName="category">
+          <option *ngFor="let cate of category" [ngValue]="cate">{{cate.name}}</option>
+        </select>
+      </div>
+
+      <button class="btn" [disabled]="!productForm.valid">Create</button>
+
+    </form>
+  </div>
+</div>
+
+
+
+

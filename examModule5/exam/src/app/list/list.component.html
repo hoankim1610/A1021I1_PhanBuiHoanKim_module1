@@ -1,33 +1,32 @@
-<h2>Product List</h2>
-<a routerLink="create" class="btn btn-info m-3" type="button">Create</a>
-<div class="form-inline">
-  <input class="form-control mr-sm-2" type="search" [(ngModel)]="nameSearch">
-  <input class="form-control mr-sm-2" type="search" [(ngModel)]="nameTypeSearch">
-  <button class="btn btn-outline-secondary" type="submit" (click)="searchByName()">Search</button>
-</div>
-<table class="table">
-  <thead class="table table-striped table-hover table-bordered">
-  <tr>
-    <th scope="col">Id</th>
+<h1 style="text-align: center; margin-top: 50px">Student List</h1>
+<a routerLink="create" class="btn btn-outline-info m-3" type="button">Create</a>
+
+<table class="table" style="text-align: center; margin-top: 30px">
+  <thead class="table table-striped table-bordered">
+  <tr  style="background-color: darkseagreen">
+    <th scope="col">Code</th>
     <th scope="col">Name</th>
-    <th scope="col">Price</th>
-    <th scope="col">Status</th>
-    <th scope="col">Quantity</th>
-    <th scope="col">Category</th>
+    <th scope="col">Group</th>
+    <th scope="col">Topic</th>
+    <th scope="col">Instructor</th>
+    <th scope="col">Email</th>
+    <th scope="col">Phone</th>
     <th scope="col">Action</th>
   </tr>
-  <tr *ngFor="let prod of products | paginate: { itemsPerPage: 3, currentPage: p }; index as i">
-    <td scope="row">{{prod.id}}</td>
-    <td scope="row">{{prod.name | titlecase}}</td>
-    <td scope="row">{{prod.price}}</td>
-    <td scope="row">{{prod.status}}</td>
-    <td scope="row">{{prod.quantity}}</td>
-    <td scope="row">{{prod.category.name}}</td>
+  <tr *ngFor="let stud of students | paginate: { itemsPerPage: 3, currentPage: p }">
+    <td scope="row">{{stud.id}}</td>
+    <td scope="row">{{stud.name}}</td>
+    <td scope="row">{{stud.group}}</td>
+    <td scope="row">{{stud.topic}}</td>
+    <td scope="row">{{stud.instructor.name}}</td>
+    <td scope="row">{{stud.email}}</td>
+    <td scope="row">{{stud.phone}}</td>
     <td>
-      <a (click)="openDialogDelete(prod.id)" style="background-color: #6f42c1; color: azure" scope="row" type="button" class="btn m-lg-1">
+      <a (click)="openDialogDelete(stud.id)" style="background-color: #6f42c1; color: azure" scope="row" type="button"
+         class="btn m-lg-1">
         Delete
       </a>
-      <a style="background-color: #b21f2d; color: azure" type="button" class="btn m-lg-3" routerLink="edit/{{prod.id}}">Edit</a>
+      <a style="background-color: #b21f2d; color: azure" type="button" class="btn m-lg-3" routerLink="edit/{{stud.id}}">Edit</a>
     </td>
   </tr>
   </thead>

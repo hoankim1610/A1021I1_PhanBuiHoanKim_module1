@@ -15,6 +15,7 @@ export class ContractListComponent implements OnInit {
   nameSearch: string;
 
   customer: any = [];
+  typeSearch: string;
 
   constructor(private contractService: ContractService,
               private customerService: CustomerService,
@@ -43,6 +44,12 @@ export class ContractListComponent implements OnInit {
   searchByName() {
     this.contractService.findByName(this.nameSearch).subscribe((data) => {
       this.contracts = data;
+    })
+  }
+
+  searchByType() {
+    this.customerService.findByName(this.nameSearch).subscribe((data) => {
+      this.customer = data;
     })
   }
 

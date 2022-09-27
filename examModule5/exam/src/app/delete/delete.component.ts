@@ -1,8 +1,7 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MatSnackBar} from "@angular/material/snack-bar";
-import {ProductServiceService} from "../service/product-service.service";
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
-
+import {StudentService} from "../service/student.service";
 
 @Component({
   selector: 'app-delete',
@@ -16,7 +15,7 @@ export class DeleteComponent implements OnInit {
 
   constructor(public dialogRef: MatDialogRef<DeleteComponent>,
               @Inject(MAT_DIALOG_DATA) public data: any,
-              private productService: ProductServiceService,
+              private studentService: StudentService,
               private snackBar: MatSnackBar) {
   }
 
@@ -27,7 +26,7 @@ export class DeleteComponent implements OnInit {
   }
 
   delete() {
-    this.productService.delete(this.idD).subscribe(
+    this.studentService.delete(this.idD).subscribe(
       (data) => {
         console.log('Success');
         this.dialogRef.close();

@@ -1,0 +1,58 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "IPhone",
+      "price": 2000,
+      "status": "new",
+      "category": {
+        "id": 1,
+        "name": "Television"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Lily",
+      "price": 2304,
+      "status": "890",
+      "category": {
+        "id": 2,
+        "name": "Phone"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Lily",
+      "price": 4664,
+      "status": "890",
+      "category": {
+        "id": 3,
+        "name": "Fridge"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Lily",
+      "price": 4777,
+      "status": "890",
+      "category": {
+        "id": 3,
+        "name": "Fridge"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Television"
+    },
+    {
+      "id": 2,
+      "name": "Phone"
+    },
+    {
+      "id": 3,
+      "name": "Fridge"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8faeee26-0e68-41bf-a575-446b5844a0b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/contract/contract-list/contract-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/contract/contract-list/contract-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/contract/contract-list/contract-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/contract/contract-list/contract-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/customer/edit-customer/edit-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/customer/edit-customer/edit-customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/customer/edit-customer/edit-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/customer/edit-customer/edit-customer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../MODULE_05/casestudy_md5/furama/src/app/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productEx/src/main/java/com/example/product/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../productEx/src/main/java/com/example/product/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../productEx/src/main/java/com/example/product/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../productEx/src/main/java/com/example/product/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/create/create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/create/create.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/create/create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/create/create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/create/create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/create/create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/data/Category.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/data/Product.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/delete/delete.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/delete/delete.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/delete/delete.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/delete/delete.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/edit/edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/edit/edit.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/edit/edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/edit/edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/edit/edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/edit/edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/list/list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/list/list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/list/list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/list/list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/service/category-service.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/app/service/product-service.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../examModule5/exam/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/ngx-pagination.module.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/ngx-pagination.module.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/paginate.pipe.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/paginate.pipe.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/pagination-controls.component.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/pagination-controls.component.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/pagination-controls.directive.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/pagination-controls.directive.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/pagination-instance.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/pagination-instance.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/pagination.service.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/pagination.service.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/template.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/lib/template.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/ngx-pagination.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/ngx-pagination.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/public-api.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/esm2020/public-api.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/fesm2015/ngx-pagination.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/fesm2015/ngx-pagination.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/fesm2020/ngx-pagination.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/node_modules/ngx-pagination/fesm2020/ngx-pagination.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/src/app/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/model/IProduct.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-create/product-create.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/data/Instructor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-create/product-create.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-create/product-create.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-delete/product-delete.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-delete/product-delete.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-delete/product-delete.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-detail/product-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../examModule5/exam/src/app/data/Student.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-detail/product-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-detail/product-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-edit/product-edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/src/app/data/Product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-edit/product-edit.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-edit/product-edit.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-list/product-list.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-list/product-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/product-list/product-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/app/service/product-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/src/app/service/product-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product-management/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product-management/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/product/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/product/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/student/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/student/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/student/src/app/student-management/student-management.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/student/src/app/student-management/student-management.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exam_student/student/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../exam_student/student/src/polyfills.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2F9esHbLlUkfDjiPvb7rIQ4sfO6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../springboot_angular_backend" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8faeee26-0e68-41bf-a575-446b5844a0b0" name="Default Changelist" comment="" />
+      <created>1663908935236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663908935236</updated>
+      <workItem from="1663908937105" duration="385000" />
+      <workItem from="1663909368753" duration="116000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

@@ -12,7 +12,7 @@ public class ProductDTO {
     @Size(min = 5, max = 50)
     private String name;
     @Min(value = 100)
-    private double price;
+    private int price;
     private String status;
 
     private Category category;
@@ -20,7 +20,7 @@ public class ProductDTO {
     public ProductDTO() {
     }
 
-    public ProductDTO(int id, String name, double price, String status, Category category) {
+    public ProductDTO(int id, String name, int price, String status, Category category) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -44,11 +44,11 @@ public class ProductDTO {
         this.name = name;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

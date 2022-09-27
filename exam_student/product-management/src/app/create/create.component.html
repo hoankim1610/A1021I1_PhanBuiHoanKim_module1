@@ -1,0 +1,84 @@
+<h1>Create</h1>
+<br>
+<div class="container-fluid">
+  <div class="col-6">
+    <form [formGroup]="productForm" (ngSubmit)="add()" novalidate>
+
+      <div class="form-group">
+        <label>Name:</label>
+        <input class="form-control" name="name" formControlName="name">
+      </div>
+      <div
+        *ngIf="!name?.valid && (name?.dirty ||name?.touched)">
+        <div style="color: #b21f2d" [hidden]="!name.errors.required">
+          Name is required.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!name.errors.pattern">
+          Name is characters.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!name.errors.maxLength">
+          Name is not exceed 10 characters.
+        </div>
+      </div>
+
+      <!--      <div class="form-group">-->
+      <!--        <label>Product:</label>-->
+      <!--        <select class="form-control" formControlName="products">-->
+      <!--          <option *ngFor="let prod of products" [ngValue]="prod">{{prod.name}}</option>-->
+      <!--        </select>-->
+      <!--      </div>-->
+
+      <div class="form-group">
+        <label>Price:</label>
+        <input class="form-control" name="price" formControlName="price">
+      </div>
+      <div
+        *ngIf="!price?.valid && (price?.dirty ||price?.touched)">
+        <div style="color: #b21f2d" [hidden]="!price.errors.required">
+          Price is required.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!price.errors.min">
+          Price must be at least 100000.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!price.errors.pattern">
+          Price are only number.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Quantity:</label>
+        <input type="number" class="form-control" name="quantity" formControlName="quantity">
+      </div>
+      <div
+        *ngIf="!quantity?.valid && (quantity?.dirty ||quantity?.touched)">
+        <div style="color: #b21f2d" [hidden]="!quantity.errors.required">
+          Quantity is required.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!quantity.errors.min">
+          Quantity must be at least 10.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Status:</label>
+        <input type="text" class="form-control" formControlName="status">
+      </div>
+      <div
+        *ngIf="!status?.valid && (status?.dirty ||status?.touched)">
+        <div style="color: #b21f2d" [hidden]="!status.errors.required">
+          Status is required.
+        </div>
+        <div style="color: #b21f2d" [hidden]="!status.errors.email">
+          Status is an email.
+        </div>
+      </div>
+
+      <button class="btn" [disabled]="!productForm.valid">Create</button>
+
+    </form>
+  </div>
+</div>
+
+
+
+

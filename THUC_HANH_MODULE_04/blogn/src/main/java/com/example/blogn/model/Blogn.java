@@ -1,6 +1,6 @@
 package com.example.blogn.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+//import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
 
@@ -15,7 +15,6 @@ public class Blogn {
     private String content;
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
-    @JsonBackReference
     private Category category;
 
     public Blogn() {
