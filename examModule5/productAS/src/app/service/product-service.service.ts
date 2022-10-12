@@ -18,6 +18,10 @@ export class ProductServiceService {
     return this.http.get<Product[]>(this.API_URL);
   }
 
+  getAllPage(page: number, size: number): Observable<Product[]> {
+    return this.http.get<Product[]>(this.API_URL + '/' + page + '/' + size);
+  }
+
   create(product: Product[]) {
     return this.http.post<Product[]>(this.API_URL, product);
   }

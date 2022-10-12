@@ -4,15 +4,16 @@
 <table class="table" style="text-align: center; margin-top: 30px">
   <thead class="table table-striped table-bordered">
   <tr  style="background-color: darkseagreen">
-    <th scope="col">Code</th>
+    <th scope="col">STT</th>
     <th scope="col">Name</th>
     <th scope="col">Price</th>
     <th scope="col">Status</th>
     <th scope="col">Category</th>
     <th scope="col">Action</th>
   </tr>
-  <tr *ngFor="let prod of products">
-    <td scope="row">{{prod.id}}</td>
+  <tr *ngFor="let prod of products, index as i">
+    <td scope="row">{{i + 1}}</td>
+<!--    <td scope="row">{{prod.id}}</td>-->
     <td scope="row">{{prod.name}}</td>
     <td scope="row">{{prod.price}}</td>
     <td scope="row">{{prod.status}}</td>
@@ -56,6 +57,30 @@
     </div>
   </div>
 </div>
+
+
+<!--Pagination-->
+<div>
+  <nav *ngIf="totalPages > 1">
+  <ul class="pagination">
+    <li class="page-item" *ngIf="page > 0">
+      <a class="page-link"
+         (click)="getPreviousPage()">Previous</a>
+    </li>
+
+    <li *ngFor="let pageNumber of totalPageList"
+        [ngClass]="'page-item ' + (pageNumber==page ? 'active':'')">
+      <a class="page-link" (click)="getNumberPage(pageNumber)">{{pageNumber + 1}}</a>
+    </li>
+
+    <li class="page-item" *ngIf="page < totalPages-1">
+      <a class="page-link"
+         (click)="getNextPage()">Next</a>
+    </li>
+  </ul>
+</nav>
+</div>
+
 
 <!--pagination-->
 <!--<pagination-controls class="pagination justify-content-center" (pageChange)="p = $event"></pagination-controls>-->

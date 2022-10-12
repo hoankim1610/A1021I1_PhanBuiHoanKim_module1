@@ -32,6 +32,17 @@ public class ProductController {
         }
     }
 
+//    @GetMapping("")
+//    public ResponseEntity<List<Product>> showList() {
+//        List<Product> productList = iProductService.findAll();
+//        if (productList == null) {
+//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//        }
+//        else {
+//            return new ResponseEntity<>(productList, HttpStatus.OK);
+//        }
+//    }
+
 //    **********
     @PostMapping("")
     public ResponseEntity<Product> create(@RequestBody Product product) {

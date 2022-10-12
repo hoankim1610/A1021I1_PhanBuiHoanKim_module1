@@ -14,10 +14,17 @@ import {throwUnknownPortalTypeError} from "@angular/cdk/portal/portal-errors";
 export class ListComponent implements OnInit {
 
   products: Product[] = [];
+  categories: Category[] = [];
 
   deleteTemp: Product = {
     category: {}
   }
+
+  totalPageList: number[] = [];
+
+  page: number = 0;
+  size: number;
+  totalPages: number;
 
   constructor(private productService: ProductServiceService,
               private categoryService: CategoryServiceService,
@@ -28,7 +35,8 @@ export class ListComponent implements OnInit {
     this.productService.getAll().subscribe(
       (res) => {
         this.products = res;
-      })
+      });
+    // this.get();
   }
 
   showDelete(products: Product) {
@@ -46,5 +54,45 @@ export class ListComponent implements OnInit {
         this.ngOnInit();
       });
   }
+
+
+
+  // Pagination
+  get() {
+    this.productService.getAllPage(this.page, this.size).subscribe((data: any) => {
+        this.products = data.content;
+
+        this.totalPageList = [];
+        this.totalPages = data.totalPages;
+
+        for (let i = 0; i < this.totalPages; i++) {
+          this.totalPageList.push(i);
+        }
+        console.log(this.page)
+        console.log(this.totalPages)
+      },
+      () => {
+        this.page--;
+        this.get();
+      });
+
+    this.categoryService.getAllType().subscribe((data) => {
+      this.categories = data;
+    });
+  }
+
+  getPreviousPage() {
+    this.page--;
+  }
+
+  getNextPage() {
+    this.page++;
+  }
+
+  getNumberPage(pageNumber: number) {
+    this.page = pageNumber;
+  }
+  // Pagination
+
 
 }

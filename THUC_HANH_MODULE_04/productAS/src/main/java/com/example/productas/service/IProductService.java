@@ -10,6 +10,8 @@ import java.util.Optional;
 public interface IProductService {
     List<Product> findAll();
 
+//    Page<Product> findAllPage(Pageable pageable);
+
     Product save(Product product);
 
     Optional<Product> findById(int id);
