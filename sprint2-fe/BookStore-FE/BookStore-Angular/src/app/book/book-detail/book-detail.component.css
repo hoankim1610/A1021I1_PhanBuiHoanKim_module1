@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.pd-wrap {
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+.product-name {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+.display-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.product-info {
+  width: 100%;
+}
+
+.product-price-discount {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 0;
+  clear: both;
+}
+.product-price-discount span.line-through {
+  text-decoration: line-through;
+  margin-left: 10px;
+  font-size: 14px;
+  vertical-align: middle;
+  color: #a5a5a5;
+}
+.card-body .box {
+  background-color: #faf9fa;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 500px;
+}
+.card-body .box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card-body .box .img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  /*height:400px;*/
+}
+
+.product-dtl .form-control {
+  font-size: 15px;
+}
+.product-dtl label {
+  line-height: 16px;
+  font-size: 15px;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.product-count {
+  margin-top: 15px;
+}
+
+.product-count .qtyminus,
+.product-count .qtyplus {
+  width: 34px;
+  height: 34px;
+  background: #3b4a6b;
+  text-align: center;
+  font-size: 19px;
+  line-height: 36px;
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.product-count .qtyminus {
+  border-radius: 3px 0 0 3px;
+}
+.product-count .qtyplus {
+  border-radius: 0 3px 3px 0;
+}
+.product-count .qty {
+  width: 60px;
+  text-align: center;
+}
+.round-black-btn {
+  border-radius: 4px;
+  background: #e6c511;
+  color: #fff;
+  padding: 7px 45px;
+  display: inline-block;
+  margin-top: 20px;
+  border: #212529;
+  transition: all 0.5s ease-in-out 0s;
+}
+.round-black-btn:hover,
+.round-black-btn:focus {
+  background: transparent;
+  color: #212529;
+  text-decoration: none;
+}
+
+.product-info-tabs {
+  margin-top: 25px;
+}
+
+.product-info-tabs .nav-tabs {
+  border-bottom: 1px solid #3b4a6b;
+}
+.product-info-tabs .nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+.product-info-tabs .nav-tabs .nav-link {
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #323232;
+}
+.product-info-tabs .nav-tabs .nav-item .nav-link:hover {
+  border: none;
+}
+.product-info-tabs .nav-tabs .nav-item.show .nav-link,
+.product-info-tabs .nav-tabs .nav-link.active,
+.product-info-tabs .nav-tabs .nav-link.active:hover {
+  border: none;
+  border-bottom: 2px solid #e6c511;
+  font-weight: bold;
+}
+.product-info-tabs .tab-content .tab-pane {
+  padding: 30px 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #7a7a7a;
+}
+.review-form .form-group {
+  clear: both;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.review-form .rate {
+  float: none;
+  display: inline-block;
+}
+.review-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  color: #000;
+}
+.review-form .form-control {
+  font-size: 14px;
+}
+.review-form input.form-control {
+  height: 40px;
+}
+.review-form textarea.form-control {
+  resize: none;
+}
+.review-form .round-black-btn {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.shop_section .container .box:hover{
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  border: 1px solid #e6c511;
+}
+.cus-card-detail{
+  width: 70rem; padding-top: 8px; border: 1px solid #3b4a6b;
+}
+
+@media (max-width: 820px) {
+  /*.card .box{*/
+  /*  height: 50%;*/
+  /*  width: 50%;*/
+  /*}*/
+  .cus-card-detail {
+    width: 32rem;
+    padding: 4px;
+    height: 1200px;
+  }
+  .cus-card-detail .card-body{
+    width: 500px;
+    padding: 4px;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 900px) {
+  /*.card .box{*/
+  /*  height: 50%;*/
+  /*  width: 50%;*/
+  /*}*/
+  .cus-card-detail {
+    width: 46rem;
+    padding: 4px;
+    height: 670px;
+  }
+  .cus-card-detail .card-body{
+    width: 700px;
+    padding: 4px;
+    height: 600px;
+  }
+}
+
+
+.round-black-btn:hover{
+  border: black solid;
+}
+
+.shop_section .box {
+  background-color: #faf9fa;
+  position: relative;
+  padding: 10px 15px;
+  margin-top: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 390px;
+}
+
+.shop_section .cus-price{
+  position: absolute;
+  top: 23rem !important;
+  left: 28px;
+}
+
+

@@ -1,0 +1,53 @@
+<!--Kim-->
+<!--&lt;!&ndash; end login section &ndash;&gt;-->
+<!--<h2>Weekly Coding Challenge #1: Sign in/up Form</h2>-->
+<div class="container" id="container" style="margin-top: 200px; margin-bottom: 100px">
+  <div class="form-container sign-in-container">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <h1>Sign in</h1>
+      <div class="social-container">
+        <a class="social-container-fb" href="#"><img style="width: 45px; height: 45px"
+                                                     src="assets/icon/facebook-login.png"></a>
+        <a class="social-container-gg" href="#"><img style="width: 45px; height: 45px"
+                                                     src="assets/icon/google-login.png"></a>
+        <a class="social-container-ins" href="#"><img style="width: 45px; height: 45px"
+                                                      src="assets/icon/insta-login.png"></a>
+      </div>
+      <span>or use your account</span>
+      <input formControlName="username" type="email" placeholder="User name"/>
+      <div class="cus-error" *ngIf="checkUserName !== ''">
+        <span class="form-text mess">{{checkUserName}}</span>
+      </div>
+      <input formControlName="password" type="password" placeholder="Password"/>
+      <div class="cus-error" *ngIf="checkPassword !== ''">
+        <span class="form-text mess">{{checkPassword}}</span>
+      </div>
+      <div class="form-item-other">
+        <div class="checkbox">
+          <input type="checkbox" id="rememberMeCheckbox" formControlName="remember_me" value="1">
+          <label for="rememberMeCheckbox" style="color: #3b4a6b">Ghi nhớ tài khoản</label>
+        </div>
+        <a href="#">Forgot your password?</a>
+      </div>
+      <div class="cus-error" *ngIf="errorMessage !== ''">
+        <span class="form-text mess">{{errorMessage}}</span>
+      </div>
+      <button class="button-5-sign-in" role="button" type="submit">Sign in</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+<!--      <div class="overlay-panel overlay-left">-->
+<!--        <h1>Welcome Back!</h1>-->
+<!--        <p>To keep connected with us please login with your personal info</p>-->
+<!--        <button class="ghost" id="signIn">Sign In</button>-->
+<!--      </div>-->
+      <div class="overlay-panel overlay-right">
+        <h1>Hello, Friend!</h1>
+        <p>If you haven't create your account, please sign up to discover</p>
+        <button class="button-5" role="button" routerLink="/register">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+

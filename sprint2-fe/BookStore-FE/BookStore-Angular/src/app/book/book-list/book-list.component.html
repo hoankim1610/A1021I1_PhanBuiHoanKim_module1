@@ -1,0 +1,18 @@
+<!--list-->
+<h3 style="color: #270082; text-align: center; margin-top: 150px; margin-bottom: 20px">Book World</h3>
+<div class="form-inline">
+  <form [formGroup]="formSearch" (ngSubmit)="searchBook()">
+    <input placeholder="1" class="form-control mr-sm-2" type="text" formControlName="categoryName">
+    <input placeholder="2" type="text" class="form-control" formControlName="bookName">
+  <button class="btn" type="submit">Search</button>
+  </form>
+</div><div class="card" style = "border: 3px solid orange" *ngFor="let book of bookList">
+  <img src="assets\images\{{book.bookImage}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{book.bookName}}</h5>
+    <p class="card-text">{{book.bookAuthorId.authorName}}</p>
+    <a href="#" class="btn btn-primary">Chi tiết sản phẩm</a>
+    <span><a style = "margin-left: 20px" href="#" class="btn btn-success">Thêm vào giỏ hàng</a></span>
+  </div>
+</div>
+

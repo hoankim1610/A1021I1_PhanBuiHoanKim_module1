@@ -1,0 +1,162 @@
+<!--<div class="container-fluid">-->
+<!--  <nav class="navbar navbar-expand-lg embed-responsive navbar-light bg-light" style="height: 30px">-->
+<!--    <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--      <ul class="navbar-nav">-->
+<!--        <li class="nav-item" style="margin-left: 90px;">-->
+<!--          <a class="nav-link" href="#"><small>GIỚI THIỆU</small></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link"><small>|</small></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#"><small>LỊCH SỬ GIAO DỊCH</small></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link"><small>|</small></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#"><small>KIỂM TRA ĐƠN HÀNG</small></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item" style="margin-left: 500px">-->
+<!--          <a class="nav-link"><small>LIÊN HỆ: +84.325.525.535</small></a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </nav>-->
+<!--</div>-->
+<!--&lt;!&ndash; header section strats &ndash;&gt;-->
+<!--<header class="header_section">-->
+<!--  <div class="container-fluid">-->
+<!--    <div class="row flex-wrap d-flex embed-responsive"-->
+<!--         style="justify-content: center; align-items: center; height: 90px">-->
+<!--      <a class="navbar-brand" routerLink="/">-->
+<!--        <img src="/assets/images/Blue Modern illustration Book Store Logo.png" alt="logo">-->
+<!--      </a>-->
+<!--      <div class="input-group mb-3 w-50 mt-2">-->
+<!--        <input type="text" class="form-control cus-input" name="search" placeholder="Tìm kiếm sách..." style="font-size: small"-->
+<!--               [(ngModel)]="search">-->
+<!--        <div class="input-group-append ">-->
+<!--          <button class="btn btn-outline-warning cus-btn" style="height: 87%" type="button"><img width="20" height="20"-->
+<!--                                                                                                 src="/assets/images/search.svg"-->
+<!--                                                                                                 (click)="searchBook(search)">-->
+<!--          </button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="cus-cart d-flex">-->
+<!--        &lt;!&ndash;          <img src="assets/images/user.svg" style="padding-right: 3px">&ndash;&gt;-->
+<!--        <div *ngIf="!isLoggedIn">-->
+<!--          <a style="color: #000000" routerLink="/login">Đăng nhập </a>-->
+<!--          <small>|</small>-->
+<!--          <a style="color: #000000" routerLink="/register"> Đăng ký</a>-->
+<!--        </div>-->
+<!--        <div *ngIf="isLoggedIn">-->
+<!--          <div class="img-dropdown">-->
+<!--            <img style="cursor: pointer" src="assets/images/user.svg">-->
+<!--            <ul class="img-dropdown-content cus-content" role="menu" aria-labelledby="menu1">-->
+<!--              <li role="presentation"><span>Tài khoản: {{userName}}</span></li>-->
+<!--              <li role="presentation" class="cus-li"><a style="color: #000000; text-decoration: none" role="menuitem"-->
+<!--                                                        href="#">Thông tin tài khoản</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="cus-cart-position" *ngIf="!isLoggedIn">-->
+<!--          <a routerLink="/login">-->
+<!--            &lt;!&ndash; <i class="fa fa-cart-plus" aria-hidden="true"></i> &ndash;&gt;-->
+<!--            &lt;!&ndash; <i class="fa fa-shopping-cart"></i> &ndash;&gt;-->
+<!--            &lt;!&ndash; <img src="https://img.icons8.com/external-wanicon-lineal-wanicon/64/000000/external-cart-supermarket-wanicon-lineal-wanicon.png"/> &ndash;&gt;-->
+<!--            <img src="/assets/images/shopping-bag.svg"/>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="cus-cart-position" *ngIf="isLoggedIn">-->
+<!--          <a routerLink="cart/detail">-->
+<!--            &lt;!&ndash; <i class="fa fa-cart-plus" aria-hidden="true"></i> &ndash;&gt;-->
+<!--            &lt;!&ndash; <i class="fa fa-shopping-cart"></i> &ndash;&gt;-->
+<!--            &lt;!&ndash; <img src="https://img.icons8.com/external-wanicon-lineal-wanicon/64/000000/external-cart-supermarket-wanicon-lineal-wanicon.png"/> &ndash;&gt;-->
+<!--            <img src="/assets/images/shopping-bag.svg"/> <span class="badge" id="lblCartCount">12</span>-->
+<!--          </a>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; <a href="">-->
+<!--            <i class="fa fa-search" aria-hidden="true"></i>-->
+<!--        </a> &ndash;&gt;-->
+<!--      </div>-->
+<!--      <div *ngIf="isLoggedIn" style="margin-bottom: 17px; margin-left: 30px">-->
+<!--        <button style="border: none; background-color: white; padding: 0" (click)="logout()">-->
+<!--          Đăng xuất-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <nav class="navbar navbar-expand-lg custom_nav-container ">-->
+<!--        <button class="navbar-toggler" type="button" data-toggle="collapse"-->
+<!--                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"-->
+<!--                aria-expanded="false" aria-label="Toggle navigation">-->
+<!--          <span class=""> </span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse dtr-menu" id="navbarSupportedContent">-->
+<!--          <ul class="navbar-nav">-->
+<!--            <li class="nav-item active hover-underline-animation cus_font">-->
+<!--              <a class="nav-link" routerLink="/">Trang chủ <span-->
+<!--                class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+<!--            <li class="nav-item cus_font">-->
+<!--              <div class="dropdown nav-link hover-underline-animation">-->
+<!--                Danh mục sách-->
+<!--                <div class="dropdown-content" style="text-align: left;">-->
+<!--                  <a style="text-transform: capitalize" *ngFor="let category of categoryList"-->
+<!--                     [routerLink]="['/category', category.categoryId]">{{category.categoryName}}</a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="nav-item cus_font">-->
+<!--              <a class="nav-link hover-underline-animation" routerLink="book/detail"> Sách bán chạy </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item cus_font">-->
+<!--              <a class="nav-link hover-underline-animation" href="#">Chương trình khuyến-->
+<!--                mãi</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item cus_font">-->
+<!--              <a class="nav-link hover-underline-animation" routerLink="/promotions">Giảm giá đặc biệt</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </nav>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</header>-->
+<!--&lt;!&ndash; end header section &ndash;&gt;-->
+
+<div class="header position-fixed">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+        <div class="full">
+          <div class="center-desk">
+            <div class="logo"> <a href="index.html"><img style="width: 150px; height: 60px" src="assets/images/book-logo.png" alt="#"></a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+        <div class="menu-area">
+          <div class="limit-box">
+            <nav class="main-menu">
+              <ul class="menu-area-main">
+                <li class="active"> <a routerLink="/home">Home</a> </li>
+                <!--                <li> <a href="about">Authors</a> </li>-->
+                <li><a routerLink="/book">Our Books</a></li>
+                <li><a routerLink="contact">Contact us</a></li>
+                <li class="mean-last"> <a ><img src="assets/images/search_icon.png" alt="#" /></a> </li>
+                <li><a routerLink="/cart"><img style="width: 30px" src="assets/images/icon_cart-removebg-preview (1).png" alt="#" /></a></li>
+                <li class="mean-last"> <a routerLink="/login"><img src="assets/images/top-icon.png" alt="#" /></a> </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end header inner -->
+
+
